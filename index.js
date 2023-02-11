@@ -70,6 +70,7 @@ class spineViewer{
     removeSpine(label){
         let _spineModel = this.getSpine(label)
         this._mainContainer.removeChild(_spineModel.Model)
+        _spineModel.destroy()
         return this._spineMap.delete(label)
     }
 
@@ -145,6 +146,10 @@ class SpineModel{
         this._spine.on("pointerup", () => (
             this.dragging = false
         ));
+    }
+
+    destroy(){
+        this._spine.destroy()
     }
 
     get Label() {
@@ -375,6 +380,7 @@ document.getElementById('addSpineBtn').onclick = async() => {
         }
         // console.log('tstsetsts')
         btn.remove()
+        Toggle_Option_Panel(spinemodel.Label)
         appViewer.removeSpine(spinemodel.Label)
     }
     btn.append(div)
