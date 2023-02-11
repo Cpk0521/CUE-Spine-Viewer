@@ -1,0 +1,111 @@
+
+root.png
+size: 128,128
+format: RGBA8888
+filter: MipMap,MipMap
+repeat: none
+ashi_mae
+  rotate: false
+  xy: 33, 52
+  size: 20, 14
+  orig: 20, 14
+  offset: 0, 0
+  index: -1
+ashi_mae_2
+  rotate: false
+  xy: 90, 82
+  size: 20, 14
+  orig: 20, 14
+  offset: 0, 0
+  index: -1
+ashi_mae_3
+  rotate: true
+  xy: 112, 76
+  size: 20, 14
+  orig: 20, 14
+  offset: 0, 0
+  index: -1
+ashi_ushiro
+  rotate: false
+  xy: 2, 9
+  size: 18, 15
+  orig: 18, 15
+  offset: 0, 0
+  index: -1
+ashi_ushiro_2
+  rotate: false
+  xy: 33, 35
+  size: 18, 15
+  orig: 18, 15
+  offset: 0, 0
+  index: -1
+ashi_ushiro_3
+  rotate: false
+  xy: 59, 60
+  size: 18, 15
+  orig: 18, 15
+  offset: 0, 0
+  index: -1
+kao
+  rotate: false
+  xy: 2, 47
+  size: 29, 19
+  orig: 29, 19
+  offset: 0, 0
+  index: -1
+kao_2
+  rotate: false
+  xy: 59, 77
+  size: 29, 19
+  orig: 29, 19
+  offset: 0, 0
+  index: -1
+kao_3
+  rotate: false
+  xy: 2, 26
+  size: 29, 19
+  orig: 29, 19
+  offset: 0, 0
+  index: -1
+koura
+  rotate: false
+  xy: 2, 98
+  size: 55, 28
+  orig: 55, 28
+  offset: 0, 0
+  index: -1
+koura_2
+  rotate: false
+  xy: 2, 68
+  size: 55, 28
+  orig: 55, 28
+  offset: 0, 0
+  index: -1
+koura_3
+  rotate: false
+  xy: 59, 98
+  size: 55, 28
+  orig: 55, 28
+  offset: 0, 0
+  index: -1
+shippo
+  rotate: true
+  xy: 116, 111
+  size: 15, 8
+  orig: 15, 8
+  offset: 0, 0
+  index: -1
+shippo_2
+  rotate: true
+  xy: 22, 9
+  size: 15, 8
+  orig: 15, 8
+  offset: 0, 0
+  index: -1
+shippo_3
+  rotate: true
+  xy: 79, 60
+  size: 15, 8
+  orig: 15, 8
+  offset: 0, 0
+  index: -1

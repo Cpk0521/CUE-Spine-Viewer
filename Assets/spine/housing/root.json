@@ -1,0 +1,2550 @@
+{
+  "skeleton": {
+    "hash": "dn527iBTuxdBxatWw4Myqwaqg4o",
+    "spine": "3.8",
+    "width": 117.63301849365234,
+    "height": 49,
+    "fps": 30,
+    "images": "./images/",
+    "author": "Cpk0521_NaN"
+  },
+  "bones": [
+    {
+      "name": "root",
+      "transform": "normal",
+      "color": "9b9b9bff"
+    },
+    {
+      "name": "body",
+      "parent": "root",
+      "x": -7.03926616552053e-07,
+      "y": 16.103965759277344,
+      "transform": "normal",
+      "color": "9b9b9bff"
+    },
+    {
+      "name": "head",
+      "parent": "body",
+      "rotation": 174.5596466064453,
+      "x": -22.258548736572266,
+      "y": 2.8115158081054688,
+      "length": 39.65858459472656,
+      "transform": "normal",
+      "color": "9b9b9bff"
+    },
+    {
+      "name": "maeashi_01",
+      "parent": "body",
+      "rotation": -138.60842895507812,
+      "x": -14.738567352294922,
+      "y": -5.413466453552246,
+      "length": 18.481487274169922,
+      "transform": "normal",
+      "color": "9b9b9bff"
+    },
+    {
+      "name": "maeashi_02",
+      "parent": "body",
+      "rotation": -165.02711486816406,
+      "x": -26.84192657470703,
+      "y": -5.904049873352051,
+      "length": 16.73619270324707,
+      "transform": "normal",
+      "color": "9b9b9bff"
+    },
+    {
+      "name": "shippo",
+      "parent": "body",
+      "rotation": -4.698675632476807,
+      "x": 26.151382446289062,
+      "y": -2.1234731674194336,
+      "length": 17.21281623840332,
+      "transform": "normal",
+      "color": "9b9b9bff"
+    },
+    {
+      "name": "ushiroashi_01",
+      "parent": "body",
+      "rotation": -49.9937629699707,
+      "x": 19.101390838623047,
+      "y": -4.003470420837402,
+      "length": 17.180700302124023,
+      "transform": "normal",
+      "color": "9b9b9bff"
+    },
+    {
+      "name": "ushiroashi_02",
+      "parent": "body",
+      "rotation": -28.237436294555664,
+      "x": 27.302001953125,
+      "y": -5.152054786682129,
+      "length": 11.523320198059082,
+      "transform": "normal",
+      "color": "9b9b9bff"
+    }
+  ],
+  "slots": [
+    {
+      "name": "ashi_ushiro2",
+      "bone": "ushiroashi_02",
+      "attachment": "ashi_ushiro",
+      "blend": "normal"
+    },
+    {
+      "name": "ashi_mae2",
+      "bone": "maeashi_02",
+      "attachment": "ashi_mae",
+      "blend": "normal"
+    },
+    {
+      "name": "shippo",
+      "bone": "shippo",
+      "attachment": "shippo",
+      "blend": "normal"
+    },
+    {
+      "name": "kao",
+      "bone": "body",
+      "attachment": "kao",
+      "blend": "normal"
+    },
+    {
+      "name": "ashi_mae",
+      "bone": "maeashi_01",
+      "attachment": "ashi_mae",
+      "blend": "normal"
+    },
+    {
+      "name": "ashi_ushiro",
+      "bone": "ushiroashi_01",
+      "attachment": "ashi_ushiro",
+      "blend": "normal"
+    },
+    {
+      "name": "koura",
+      "bone": "body",
+      "attachment": "koura",
+      "blend": "normal"
+    }
+  ],
+  "ik": [],
+  "transform": [],
+  "path": [],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "ashi_ushiro2": {
+          "ashi_ushiro": {
+            "type": "region",
+            "name": "ashi_ushiro",
+            "path": "ashi_ushiro",
+            "rotation": 28.2374324798584,
+            "x": 4.423727035522461,
+            "y": -0.5052533149719238,
+            "scaleX": 1,
+            "scaleY": 1,
+            "width": 25,
+            "height": 21,
+            "color": "ffffffff"
+          },
+          "ashi_ushiro_2": {
+            "type": "region",
+            "name": "ashi_ushiro_2",
+            "path": "ashi_ushiro_2",
+            "rotation": 28.2374324798584,
+            "x": 4.423727035522461,
+            "y": -0.5052533149719238,
+            "scaleX": 1,
+            "scaleY": 1,
+            "width": 25,
+            "height": 21,
+            "color": "ffffffff"
+          },
+          "ashi_ushiro_3": {
+            "type": "region",
+            "name": "ashi_ushiro_3",
+            "path": "ashi_ushiro_3",
+            "rotation": 28.2374324798584,
+            "x": 4.423727035522461,
+            "y": -0.5052533149719238,
+            "scaleX": 1,
+            "scaleY": 1,
+            "width": 25,
+            "height": 21,
+            "color": "ffffffff"
+          }
+        },
+        "ashi_mae2": {
+          "ashi_mae": {
+            "type": "region",
+            "name": "ashi_mae",
+            "path": "ashi_mae",
+            "rotation": 165.027099609375,
+            "x": 7.540517807006836,
+            "y": -0.8022952079772949,
+            "scaleX": 1,
+            "scaleY": 1,
+            "width": 28,
+            "height": 20,
+            "color": "ffffffff"
+          },
+          "ashi_mae_2": {
+            "type": "region",
+            "name": "ashi_mae_2",
+            "path": "ashi_mae_2",
+            "rotation": 165.027099609375,
+            "x": 7.540517807006836,
+            "y": -0.8022952079772949,
+            "scaleX": 1,
+            "scaleY": 1,
+            "width": 28,
+            "height": 20,
+            "color": "ffffffff"
+          },
+          "ashi_mae_3": {
+            "type": "region",
+            "name": "ashi_mae_3",
+            "path": "ashi_mae_3",
+            "rotation": 165.027099609375,
+            "x": 7.540517807006836,
+            "y": -0.8022952079772949,
+            "scaleX": 1,
+            "scaleY": 1,
+            "width": 28,
+            "height": 20,
+            "color": "ffffffff"
+          }
+        },
+        "shippo": {
+          "shippo": {
+            "type": "region",
+            "name": "shippo",
+            "path": "shippo",
+            "rotation": -355.30133056640625,
+            "x": 12.097801208496094,
+            "y": -2.0174617767333984,
+            "scaleX": 1,
+            "scaleY": 1,
+            "width": 22,
+            "height": 12,
+            "color": "ffffffff"
+          },
+          "shippo_2": {
+            "type": "region",
+            "name": "shippo_2",
+            "path": "shippo_2",
+            "rotation": -355.30133056640625,
+            "x": 12.097801208496094,
+            "y": -2.0174617767333984,
+            "scaleX": 1,
+            "scaleY": 1,
+            "width": 22,
+            "height": 12,
+            "color": "ffffffff"
+          },
+          "shippo_3": {
+            "type": "region",
+            "name": "shippo_3",
+            "path": "shippo_3",
+            "rotation": -355.30133056640625,
+            "x": 12.097801208496094,
+            "y": -2.0174617767333984,
+            "scaleX": 1,
+            "scaleY": 1,
+            "width": 22,
+            "height": 12,
+            "color": "ffffffff"
+          }
+        },
+        "kao": {
+          "kao": {
+            "type": "mesh",
+            "name": "kao",
+            "path": "kao",
+            "color": "ffffffff",
+            "uvs": [
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0
+            ],
+            "triangles": [
+              1,
+              2,
+              3,
+              1,
+              3,
+              0
+            ],
+            "vertices": [
+              1,
+              1,
+              -26.59000015258789,
+              -11.130000114440918,
+              1,
+              1,
+              2,
+              44.79999923706055,
+              18.270000457763672,
+              1,
+              1,
+              2,
+              47.36000061035156,
+              -8.609999656677246,
+              1,
+              1,
+              1,
+              -26.59000015258789,
+              15.869999885559082,
+              1
+            ],
+            "hull": 4,
+            "edges": [
+              0,
+              2,
+              2,
+              4,
+              4,
+              6,
+              0,
+              6
+            ],
+            "width": 42,
+            "height": 27
+          },
+          "kao_2": {
+            "type": "mesh",
+            "name": "kao_2",
+            "path": "kao_2",
+            "color": "ffffffff",
+            "uvs": [
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0
+            ],
+            "triangles": [
+              1,
+              2,
+              3,
+              1,
+              3,
+              0
+            ],
+            "vertices": [
+              1,
+              1,
+              -26.59000015258789,
+              -11.130000114440918,
+              1,
+              1,
+              2,
+              44.79999923706055,
+              18.270000457763672,
+              1,
+              1,
+              2,
+              47.36000061035156,
+              -8.609999656677246,
+              1,
+              1,
+              1,
+              -26.59000015258789,
+              15.869999885559082,
+              1
+            ],
+            "hull": 4,
+            "edges": [
+              0,
+              2,
+              2,
+              4,
+              4,
+              6,
+              0,
+              6
+            ],
+            "width": 42,
+            "height": 27
+          },
+          "kao_3": {
+            "type": "mesh",
+            "name": "kao_3",
+            "path": "kao_3",
+            "color": "ffffffff",
+            "uvs": [
+              1,
+              1,
+              0,
+              1,
+              0,
+              0,
+              1,
+              0
+            ],
+            "triangles": [
+              1,
+              2,
+              3,
+              1,
+              3,
+              0
+            ],
+            "vertices": [
+              1,
+              1,
+              -25.59000015258789,
+              -11.130000114440918,
+              1,
+              1,
+              2,
+              43.810001373291016,
+              18.170000076293945,
+              1,
+              1,
+              2,
+              46.369998931884766,
+              -8.710000038146973,
+              1,
+              1,
+              1,
+              -25.59000015258789,
+              15.869999885559082,
+              1
+            ],
+            "hull": 4,
+            "edges": [
+              0,
+              2,
+              2,
+              4,
+              4,
+              6,
+              0,
+              6
+            ],
+            "width": 42,
+            "height": 27
+          }
+        },
+        "ashi_mae": {
+          "ashi_mae": {
+            "type": "region",
+            "name": "ashi_mae",
+            "path": "ashi_mae",
+            "rotation": 138.60842895507812,
+            "x": 12.489420890808105,
+            "y": -0.728245735168457,
+            "scaleX": 1,
+            "scaleY": 1,
+            "width": 28,
+            "height": 20,
+            "color": "ffffffff"
+          },
+          "ashi_mae_2": {
+            "type": "region",
+            "name": "ashi_mae_2",
+            "path": "ashi_mae_2",
+            "rotation": 138.60842895507812,
+            "x": 12.489420890808105,
+            "y": -0.728245735168457,
+            "scaleX": 1,
+            "scaleY": 1,
+            "width": 28,
+            "height": 20,
+            "color": "ffffffff"
+          },
+          "ashi_mae_3": {
+            "type": "region",
+            "name": "ashi_mae_3",
+            "path": "ashi_mae_3",
+            "rotation": 138.60842895507812,
+            "x": 12.489420890808105,
+            "y": -0.728245735168457,
+            "scaleX": 1,
+            "scaleY": 1,
+            "width": 28,
+            "height": 20,
+            "color": "ffffffff"
+          }
+        },
+        "ashi_ushiro": {
+          "ashi_ushiro": {
+            "type": "region",
+            "name": "ashi_ushiro",
+            "path": "ashi_ushiro",
+            "rotation": 49.99375534057617,
+            "x": 9.69546127319336,
+            "y": -1.8591680526733398,
+            "scaleX": 1,
+            "scaleY": 1,
+            "width": 25,
+            "height": 21,
+            "color": "ffffffff"
+          },
+          "ashi_ushiro_2": {
+            "type": "region",
+            "name": "ashi_ushiro_2",
+            "path": "ashi_ushiro_2",
+            "rotation": 49.99375534057617,
+            "x": 9.69546127319336,
+            "y": -1.8591680526733398,
+            "scaleX": 1,
+            "scaleY": 1,
+            "width": 25,
+            "height": 21,
+            "color": "ffffffff"
+          },
+          "ashi_ushiro_3": {
+            "type": "region",
+            "name": "ashi_ushiro_3",
+            "path": "ashi_ushiro_3",
+            "rotation": 49.99375534057617,
+            "x": 9.69546127319336,
+            "y": -1.8591680526733398,
+            "scaleX": 1,
+            "scaleY": 1,
+            "width": 25,
+            "height": 21,
+            "color": "ffffffff"
+          }
+        },
+        "koura": {
+          "koura": {
+            "type": "region",
+            "name": "koura",
+            "path": "koura",
+            "rotation": 0,
+            "x": -0.08975193649530411,
+            "y": 5.874847412109375,
+            "scaleX": 1,
+            "scaleY": 1,
+            "width": 79,
+            "height": 40,
+            "color": "ffffffff"
+          },
+          "koura_2": {
+            "type": "region",
+            "name": "koura_2",
+            "path": "koura_2",
+            "rotation": 0,
+            "x": -0.08975193649530411,
+            "y": 5.874847412109375,
+            "scaleX": 1,
+            "scaleY": 1,
+            "width": 79,
+            "height": 40,
+            "color": "ffffffff"
+          },
+          "koura_3": {
+            "type": "region",
+            "name": "koura_3",
+            "path": "koura_3",
+            "rotation": 0,
+            "x": -0.08975193649530411,
+            "y": 5.874847412109375,
+            "scaleX": 1,
+            "scaleY": 1,
+            "width": 79,
+            "height": 40,
+            "color": "ffffffff"
+          }
+        }
+      }
+    }
+  ],
+  "events": {},
+  "eventsName": [],
+  "animations": {
+    "wait": {
+      "slots": {
+        "ashi_mae": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "ashi_mae"
+            }
+          ]
+        },
+        "ashi_mae2": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "ashi_mae"
+            }
+          ]
+        },
+        "ashi_ushiro": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "ashi_ushiro"
+            }
+          ]
+        },
+        "ashi_ushiro2": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "ashi_ushiro"
+            }
+          ]
+        },
+        "kao": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "kao"
+            }
+          ]
+        },
+        "koura": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "koura"
+            }
+          ]
+        },
+        "shippo": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "shippo"
+            }
+          ]
+        }
+      },
+      "bones": {
+        "root": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "ushiroashi_02": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "ushiroashi_01": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "shippo": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 0.5,
+              "angle": 19.907724380493164,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 1,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "maeashi_02": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "maeashi_01": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "head": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 0.5,
+              "angle": -3.6831512451171875,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 1,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "body": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        }
+      },
+      "ik": {},
+      "transform": {},
+      "paths": {},
+      "deform": {}
+    },
+    "wait2": {
+      "slots": {
+        "ashi_mae": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "ashi_mae_2"
+            }
+          ]
+        },
+        "ashi_mae2": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "ashi_mae_2"
+            }
+          ]
+        },
+        "ashi_ushiro": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "ashi_ushiro_2"
+            }
+          ]
+        },
+        "ashi_ushiro2": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "ashi_ushiro_2"
+            }
+          ]
+        },
+        "kao": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "kao_2"
+            }
+          ]
+        },
+        "koura": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "koura_2"
+            }
+          ]
+        },
+        "shippo": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "shippo_2"
+            }
+          ]
+        }
+      },
+      "bones": {
+        "root": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "ushiroashi_02": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "ushiroashi_01": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "shippo": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 0.5,
+              "angle": 19.907724380493164,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 1,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "maeashi_02": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "maeashi_01": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "head": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 0.5,
+              "angle": -3.6831512451171875,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 1,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "body": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        }
+      },
+      "ik": {},
+      "transform": {},
+      "paths": {},
+      "deform": {}
+    },
+    "wait3": {
+      "slots": {
+        "ashi_mae": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "ashi_mae_3"
+            }
+          ]
+        },
+        "ashi_mae2": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "ashi_mae_3"
+            }
+          ]
+        },
+        "ashi_ushiro": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "ashi_ushiro_3"
+            }
+          ]
+        },
+        "ashi_ushiro2": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "ashi_ushiro_3"
+            }
+          ]
+        },
+        "kao": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "kao_3"
+            }
+          ]
+        },
+        "koura": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "koura_3"
+            }
+          ]
+        },
+        "shippo": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "shippo_3"
+            }
+          ]
+        }
+      },
+      "bones": {
+        "root": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "ushiroashi_02": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "ushiroashi_01": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "shippo": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 0.5,
+              "angle": 19.907724380493164,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 1,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "maeashi_02": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "maeashi_01": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "head": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 0.5,
+              "angle": -3.6831512451171875,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 1,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "body": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        }
+      },
+      "ik": {},
+      "transform": {},
+      "paths": {},
+      "deform": {}
+    },
+    "walk": {
+      "slots": {
+        "ashi_mae": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "ashi_mae"
+            }
+          ]
+        },
+        "ashi_mae2": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "ashi_mae"
+            }
+          ]
+        },
+        "ashi_ushiro": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "ashi_ushiro"
+            }
+          ]
+        },
+        "ashi_ushiro2": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "ashi_ushiro"
+            }
+          ]
+        },
+        "kao": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "kao"
+            }
+          ]
+        },
+        "koura": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "koura"
+            }
+          ]
+        },
+        "shippo": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "shippo"
+            }
+          ]
+        }
+      },
+      "bones": {
+        "root": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "ushiroashi_02": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 0.5,
+              "angle": 9.735755920410156,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 1,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "ushiroashi_01": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 0.5,
+              "angle": -10.821159362792969,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 1,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "shippo": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 0.5,
+              "angle": 19.907724380493164,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 1,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "maeashi_02": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 0.5,
+              "angle": -14.416030883789062,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 1,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "maeashi_01": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 0.5,
+              "angle": 16.12701416015625,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 1,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "head": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 0.5,
+              "angle": -3.6831512451171875,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 1,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "body": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 0.5,
+              "x": -0.4879913330078125,
+              "y": 0.7320022583007812,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 1,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        }
+      },
+      "ik": {},
+      "transform": {},
+      "paths": {},
+      "deform": {}
+    },
+    "walk2": {
+      "slots": {
+        "ashi_mae": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "ashi_mae_2"
+            }
+          ]
+        },
+        "ashi_mae2": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "ashi_mae_2"
+            }
+          ]
+        },
+        "ashi_ushiro": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "ashi_ushiro_2"
+            }
+          ]
+        },
+        "ashi_ushiro2": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "ashi_ushiro_2"
+            }
+          ]
+        },
+        "kao": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "kao_2"
+            }
+          ]
+        },
+        "koura": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "koura_2"
+            }
+          ]
+        },
+        "shippo": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "shippo_2"
+            }
+          ]
+        }
+      },
+      "bones": {
+        "root": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "ushiroashi_02": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 0.5,
+              "angle": 9.735755920410156,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 1,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "ushiroashi_01": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 0.5,
+              "angle": -10.821159362792969,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 1,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "shippo": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 0.5,
+              "angle": 19.907724380493164,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 1,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "maeashi_02": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 0.5,
+              "angle": -14.416030883789062,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 1,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "maeashi_01": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 0.5,
+              "angle": 16.12701416015625,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 1,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "head": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 0.5,
+              "angle": -3.6831512451171875,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 1,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "body": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 0.5,
+              "x": -0.4879913330078125,
+              "y": 0.7320022583007812,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 1,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        }
+      },
+      "ik": {},
+      "transform": {},
+      "paths": {},
+      "deform": {}
+    },
+    "walk3": {
+      "slots": {
+        "ashi_mae": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "ashi_mae_3"
+            }
+          ]
+        },
+        "ashi_mae2": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "ashi_mae_3"
+            }
+          ]
+        },
+        "ashi_ushiro": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "ashi_ushiro_3"
+            }
+          ]
+        },
+        "ashi_ushiro2": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "ashi_ushiro_3"
+            }
+          ]
+        },
+        "kao": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "kao_3"
+            }
+          ]
+        },
+        "koura": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "koura_3"
+            }
+          ]
+        },
+        "shippo": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "shippo_3"
+            }
+          ]
+        }
+      },
+      "bones": {
+        "root": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "ushiroashi_02": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 0.5,
+              "angle": 9.735755920410156,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 1,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "ushiroashi_01": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 0.5,
+              "angle": -10.821159362792969,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 1,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "shippo": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 0.5,
+              "angle": 19.907724380493164,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 1,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "maeashi_02": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 0.5,
+              "angle": -14.416030883789062,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 1,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "maeashi_01": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 0.5,
+              "angle": 16.12701416015625,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 1,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "head": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 0.5,
+              "angle": -3.6831512451171875,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 1,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "body": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 0.5,
+              "x": -0.4879913330078125,
+              "y": 0.7320022583007812,
+              "curve": 0.25,
+              "c2": 0,
+              "c3": 0.75,
+              "c4": 1
+            },
+            {
+              "time": 1,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        }
+      },
+      "ik": {},
+      "transform": {},
+      "paths": {},
+      "deform": {}
+    },
+    "pseudo_setup_pose": {
+      "bones": {
+        "body": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0,
+              "curve": "stepped"
+            },
+            {
+              "time": 1,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0,
+              "curve": "stepped"
+            },
+            {
+              "time": 1,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1,
+              "curve": "stepped"
+            },
+            {
+              "time": 1,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "head": {
+          "rotate": [
+            {
+              "time": 0,
+              "angle": 0,
+              "curve": "stepped"
+            },
+            {
+              "time": 1,
+              "angle": 0
+            }
+          ],
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0,
+              "curve": "stepped"
+            },
+            {
+              "time": 1,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1,
+              "curve": "stepped"
+            },
+            {
+              "time": 1,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        }
+      },
+      "slots": {},
+      "ik": {},
+      "ffd": {},
+      "drawOrder": [
+        {
+          "offsets": [],
+          "time": 0
+        }
+      ]
+    }
+  }
+}

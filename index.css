@@ -1,0 +1,416 @@
+@font-face {
+    font-family: RodinCattleya_Pro_B;
+    src: url(./Assets/font/FOT_RodinCattleya_Pro_B.otf);
+}
+
+@font-face {
+    font-family: RodinCattleya_Pro_EB;
+    src: url(./Assets/font/FOT_RodinCattleya_Pro_EB.otf);
+}
+
+@font-face {
+    font-family: RodinCattleya_Pro_DB;
+    src: url(./Assets/font/FOT_RodinCattleya_Pro_DB.otf);
+}
+
+.nomralfont{
+    font-size: 1.2rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+}
+
+img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+#root{
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+}
+
+/*
+左邊導覽列
+*/
+#left {
+    width: 80px;
+    background-color: #202225;
+    border-right: 1px solid #202225;
+    /* box-shadow: 0.5px 0px 5px 1px #282a2e; */
+    min-height: 100vh;
+    overflow: scroll;
+    z-index: 10;
+}
+
+#left::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+#sidebar{
+    padding: 15px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#icon_list{
+    padding: 8px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 8px;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    border-bottom: 1px solid #36393f;
+    padding-bottom: 10px;
+}
+
+.iconBtn {
+    background-color: #36393f;
+    width: 60px;
+    height: 60px;
+    border-radius: 25%;
+    border: 0px;
+    background-image: url('./Assets/icons/13001.png');
+    background-size: contain;
+    cursor: pointer;
+    position: relative;
+}
+
+/* .iconBtn::after{
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    line-height: 100px;
+    text-align: center;
+    background-color: #e45656;
+    border-radius: 50%;
+    top : -5px;
+    right: -5px;
+} */
+
+.wordBtn {
+    background-color: #36393f;
+    width: 60px;
+    height: 60px;
+    border-radius: 25%;
+    border: 0px;
+    cursor: pointer;
+    font-family: RodinCattleya_Pro_DB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    color: #dcddde;
+    position: relative;
+}
+
+.iconBtn:hover{
+    background-color : #dcddde;
+}
+
+.defaultBtn{
+    margin-top: 8px;
+    background-color: #36393f;
+    color: #dcddde;
+    width: 60px;
+    height: 60px;
+    border-radius: 25%;
+    cursor: pointer;
+    border: 0px;
+}
+
+.wordBtn:hover, .defaultBtn:hover {
+    background-color : #dcddde;
+    color: #36393f;
+}
+
+.delMinBtn{
+    position: absolute;
+    width: 22.5px;
+    height: 22.5px;
+    line-height: 100px;
+    text-align: center;
+    background-color: #f3899e;
+    color: #dcddde;
+    border-radius: 50%;
+    top : -6px;
+    right: -8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delMinBtn:hover {
+    background-color: #f8496c;
+    color: #dcddde;
+}
+
+/* 選單 */
+
+#options {
+    width: 300px;
+    height: 100vh;
+    background-color: #36393f;
+    border-right: 1px solid #36393f;
+    left: 80px;
+    top: 0px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    animation: SlideIn .5s;
+}
+
+.header {
+    width: 100%;
+    height: 45px;
+    background-color: #2f3136;
+    border-bottom: 1px solid #2f3136;
+    box-shadow: 0px 0.5px 5px 1px #26272b;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center
+}
+
+#closebtn {
+    background-color: #2f3136;
+    height: 100%;
+    color: #dcddde;
+    cursor: pointer;
+    border: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+#title {
+    padding: 0 0px 0 15px;
+    color: #dcddde;
+    font-family: RodinCattleya_Pro_B;
+}
+
+.content {
+    width: 100%;
+    height: calc(100vh - 45px);
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    font-family: RodinCattleya_Pro_B;
+    color: #dcddde;
+    z-index : 5
+}
+
+.content::-webkit-scrollbar {
+    width: 10px;
+    height: 0px;
+}
+
+.content::-webkit-scrollbar-track {
+    background-color: #2e3338;
+    border-radius: 100px;
+}
+
+.content::-webkit-scrollbar-thumb {
+    background-color: #202225;
+    border-radius: 100px;
+}
+
+/* 選單 > Create */
+
+.form-select {
+    padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+    -moz-padding-start: calc(0.75rem - 3px);
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #dcddde;
+    background-color: #42464d;
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+    border: 1px solid #42464d;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+    font-family: RodinCattleya_Pro_DB;
+}
+
+.form-select::-webkit-scrollbar {
+    width: 0px;
+}
+
+.form-select::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.form-select::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.form-select > option {
+    width: 300px;
+}
+
+.controll-list {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #45474b;
+    display: flex;
+    flex-direction: column;
+}
+
+.controll-block{
+    padding: 4px 10px 4px 15px;
+    /* background-color: #fff; */
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.controllBtn-list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.controllBtn-list > button{
+    width: 35%;
+    border-radius: 5px;
+    background: #42464d;
+    border: 1px solid #42464d;    
+    color: #fff;
+    font-size: large;
+    font-family: RodinCattleya_Pro_DB;
+    text-align: center;
+    cursor: pointer;
+}
+
+.controllBtn-list > button:hover {
+    background: #3c3f45;
+    border: 1px solid #3c3f45;
+}
+
+/* 選單 > Spine */
+.info {
+    padding: 8px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #45474b;
+}
+
+.ModelName {
+    margin: auto;
+    font-size: 1.75rem;
+}
+
+.CostumeName {
+    margin: auto;
+    font-size: .9rem;
+}
+
+.collapsible {
+    background-color: #36393f;
+    color: #dcddde;
+    font-family: RodinCattleya_Pro_B;
+    cursor: pointer;
+    padding: 5px 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: large;
+    border-bottom: 1px solid #45474b;
+}
+
+.active, .collapsible:hover {
+    background-color: #42464d;
+}
+
+.collapsible:after {
+    content: '\002B';
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.collapsible-content {
+    display: none;
+}
+
+.collapsible-list {
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.collapsible-list > button {
+    width: 100%;
+    border-radius: 5px;
+    background: #42464d;
+    border: 1px solid #42464d;
+    padding: 5px;
+    font-weight: 500;
+    color: #fff;
+    font-size: large;
+    text-align: center;
+}
+
+.collapsible-list > button:hover {
+    background: #3c3f45;
+    border: 1px solid #3c3f45;
+}
+
+/* Viewer */
+#viewer {    
+    width: calc(100vw - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+@keyframes SlideIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-350px);
+        transform: translateX(-350px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}

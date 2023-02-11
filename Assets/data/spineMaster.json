@@ -1,0 +1,1307 @@
+{
+    "Master": [
+        {
+            "id": 1,
+            "name": "六石陽菜",
+            "Spine": [
+                {
+                    "costumeId": 1,
+                    "costumeName": "私服",
+                    "path": "spine/common/001/common_001_001/root.json",
+                    "icons": "icons/01001.png"
+                },
+                {
+                    "costumeId": 2,
+                    "costumeName": "レッスン着",
+                    "path": "spine/common/001/common_001_002/root.json",
+                    "icons": "icons/01002.png"
+                },
+                {
+                    "costumeId": 3,
+                    "costumeName": "Forever Friends",
+                    "path": "spine/common/001/common_001_003/root.json",
+                    "icons": "icons/01003.png"
+                },
+                {
+                    "costumeId": 4,
+                    "costumeName": "私立秋島高校",
+                    "path": "spine/common/001/common_001_004/root.json",
+                    "icons": "icons/01004.png"
+                },
+                {
+                    "costumeId": 5,
+                    "costumeName": "束の間のロンググッドバイ",
+                    "path": "spine/common/001/common_001_005/root.json",
+                    "icons": "icons/01005.png"
+                },
+                {
+                    "costumeId": 6,
+                    "costumeName": "Knocking on My Dream!!",
+                    "path": "spine/common/001/common_001_006/root.json",
+                    "icons": "icons/01006.png"
+                },
+                {
+                    "costumeId": 7,
+                    "costumeName": "水着(2020年)",
+                    "path": "spine/common/001/common_001_007/root.json",
+                    "icons": "icons/01007.png"
+                },
+                {
+                    "costumeId": 8,
+                    "costumeName": "エヴァーグリーン",
+                    "path": "spine/common/001/common_001_008/root.json",
+                    "icons": "icons/01008.png"
+                },
+                {
+                    "costumeId": 9,
+                    "costumeName": "廻る日の１ページ",
+                    "path": "spine/common/001/common_001_009/root.json",
+                    "icons": "icons/01009.png"
+                },
+                {
+                    "costumeId": 10,
+                    "costumeName": "ハーモニー・ダイナー",
+                    "path": "spine/common/001/common_001_010/root.json",
+                    "icons": "icons/01010.png"
+                },
+                {
+                    "costumeId": 11,
+                    "costumeName": "AiRBLUE X'mas!",
+                    "path": "spine/common/001/common_001_011/root.json",
+                    "icons": "icons/01011.png"
+                },
+                {
+                    "costumeId": 12,
+                    "costumeName": "届け君へ",
+                    "path": "spine/common/001/common_001_012/root.json",
+                    "icons": "icons/01012.png"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "鷹取舞花",
+            "Spine": [
+                {
+                    "costumeId": 1,
+                    "costumeName": "私服",
+                    "path": "spine/common/002/common_002_001/root.json",
+                    "icons": "icons/02001.png"
+                },
+                {
+                    "costumeId": 2,
+                    "costumeName": "レッスン着",
+                    "path": "spine/common/002/common_002_002/root.json",
+                    "icons": "icons/02002.png"
+                },
+                {
+                    "costumeId": 3,
+                    "costumeName": "Forever Friends",
+                    "path": "spine/common/002/common_002_003/root.json",
+                    "icons": "icons/02003.png"
+                },
+                {
+                    "costumeId": 4,
+                    "costumeName": "都立神瑞学園高校",
+                    "path": "spine/common/002/common_002_004/root.json",
+                    "icons": "icons/02004.png"
+                },
+                {
+                    "costumeId": 5,
+                    "costumeName": "シロクロ・コミット",
+                    "path": "spine/common/002/common_002_005/root.json",
+                    "icons": "icons/02005.png"
+                },
+                {
+                    "costumeId": 6,
+                    "costumeName": "Knocking on My Dream!!",
+                    "path": "spine/common/002/common_002_006/root.json",
+                    "icons": "icons/02006.png"
+                },
+                {
+                    "costumeId": 7,
+                    "costumeName": "水着(2020年)",
+                    "path": "spine/common/002/common_002_007/root.json",
+                    "icons": "icons/02007.png"
+                },
+                {
+                    "costumeId": 8,
+                    "costumeName": "夏制服",
+                    "path": "spine/common/002/common_002_008/root.json",
+                    "icons": "icons/02008.png"
+                },
+                {
+                    "costumeId": 9,
+                    "costumeName": "ベイビー・クロケット",
+                    "path": "spine/common/002/common_002_009/root.json",
+                    "icons": "icons/02009.png"
+                },
+                {
+                    "costumeId": 10,
+                    "costumeName": "ゴールデンアワー",
+                    "path": "spine/common/002/common_002_010/root.json",
+                    "icons": "icons/02010.png"
+                },
+                {
+                    "costumeId": 11,
+                    "costumeName": "ライトマイファイア",
+                    "path": "spine/common/002/common_002_011/root.json",
+                    "icons": "icons/02011.png"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "鹿野志穂",
+            "Spine": [
+                {
+                    "costumeId": 1,
+                    "costumeName": "私服",
+                    "path": "spine/common/003/common_003_001/root.json",
+                    "icons": "icons/03001.png"
+                },
+                {
+                    "costumeId": 2,
+                    "costumeName": "レッスン着",
+                    "path": "spine/common/003/common_003_002/root.json",
+                    "icons": "icons/03002.png"
+                },
+                {
+                    "costumeId": 3,
+                    "costumeName": "Forever Friends",
+                    "path": "spine/common/003/common_003_003/root.json",
+                    "icons": "icons/03003.png"
+                },
+                {
+                    "costumeId": 4,
+                    "costumeName": "ひとりこのへやで",
+                    "path": "spine/common/003/common_003_004/root.json",
+                    "icons": "icons/03004.png"
+                },
+                {
+                    "costumeId": 5,
+                    "costumeName": "わたしにできること",
+                    "path": "spine/common/003/common_003_005/root.json",
+                    "icons": "icons/03005.png"
+                },
+                {
+                    "costumeId": 6,
+                    "costumeName": "Knocking on My Dream!!",
+                    "path": "spine/common/003/common_003_006/root.json",
+                    "icons": "icons/03006.png"
+                },
+                {
+                    "costumeId": 7,
+                    "costumeName": "水着(2020年)",
+                    "path": "spine/common/003/common_003_007/root.json",
+                    "icons": "icons/03007.png"
+                },
+                {
+                    "costumeId": 8,
+                    "costumeName": "ぬれねこにひき",
+                    "path": "spine/common/003/common_003_008/root.json",
+                    "icons": "icons/03008.png"
+                },
+                {
+                    "costumeId": 9,
+                    "costumeName": "なつかげすずし",
+                    "path": "spine/common/003/common_003_009/root.json",
+                    "icons": "icons/03009.png"
+                },
+                {
+                    "costumeId": 10,
+                    "costumeName": "いただきのほし",
+                    "path": "spine/common/003/common_003_010/root.json",
+                    "icons": "icons/03010.png"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "月居ほのか",
+            "Spine": [
+                {
+                    "costumeId": 1,
+                    "costumeName": "私服",
+                    "path": "spine/common/004/common_004_001/root.json",
+                    "icons": "icons/04001.png"
+                },
+                {
+                    "costumeId": 2,
+                    "costumeName": "レッスン着",
+                    "path": "spine/common/004/common_004_002/root.json",
+                    "icons": "icons/04002.png"
+                },
+                {
+                    "costumeId": 3,
+                    "costumeName": "Forever Friends",
+                    "path": "spine/common/004/common_004_003/root.json",
+                    "icons": "icons/04003.png"
+                },
+                {
+                    "costumeId": 4,
+                    "costumeName": "ひたむきトレイル",
+                    "path": "spine/common/004/common_004_004/root.json",
+                    "icons": "icons/04004.png"
+                },
+                {
+                    "costumeId": 6,
+                    "costumeName": "Never Knows Best ",
+                    "path": "spine/common/004/common_004_006/root.json",
+                    "icons": "icons/04006.png"
+                },
+                {
+                    "costumeId": 7,
+                    "costumeName": "スタンドバイミー",
+                    "path": "spine/common/004/common_004_007/root.json",
+                    "icons": "icons/04007.png"
+                },
+                {
+                    "costumeId": 8,
+                    "costumeName": "Knocking on My Dream!!",
+                    "path": "spine/common/004/common_004_008/root.json",
+                    "icons": "icons/04008.png"
+                },
+                {
+                    "costumeId": 9,
+                    "costumeName": "水着(2020年)",
+                    "path": "spine/common/004/common_004_009/root.json",
+                    "icons": "icons/04009.png"
+                },
+                {
+                    "costumeId": 10,
+                    "costumeName": "夏制服",
+                    "path": "spine/common/004/common_004_010/root.json",
+                    "icons": "icons/04010.png"
+                },
+                {
+                    "costumeId": 11,
+                    "costumeName": "女王に捧げる薬指",
+                    "path": "spine/common/004/common_004_011/root.json",
+                    "icons": "icons/04011.png"
+                },
+                {
+                    "costumeId": 12,
+                    "costumeName": "fun! fun! fun!",
+                    "path": "spine/common/004/common_004_012/root.json",
+                    "icons": "icons/04012.png"
+                },
+                {
+                    "costumeId": 13,
+                    "costumeName": "way of life",
+                    "path": "spine/common/004/common_004_013/root.json",
+                    "icons": "icons/04013.png"
+                },
+                {
+                    "costumeId": 14,
+                    "costumeName": "わたしのアリーナ！",
+                    "path": "spine/common/004/common_004_014/root.json",
+                    "icons": "icons/04014.png"
+                },
+                {
+                    "costumeId": 15,
+                    "costumeName": "タイドアフター",
+                    "path": "spine/common/004/common_004_015/root.json",
+                    "icons": "icons/04015.png"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "天童悠希",
+            "Spine": [
+                {
+                    "costumeId": 1,
+                    "costumeName": "私服",
+                    "path": "spine/common/005/common_005_001/root.json",
+                    "icons": "icons/05001.png"
+                },
+                {
+                    "costumeId": 2,
+                    "costumeName": "レッスン着",
+                    "path": "spine/common/005/common_005_002/root.json",
+                    "icons": "icons/05002.png"
+                },
+                {
+                    "costumeId": 3,
+                    "costumeName": "Forever Friends",
+                    "path": "spine/common/005/common_005_003/root.json",
+                    "icons": "icons/05003.png"
+                },
+                {
+                    "costumeId": 4,
+                    "costumeName": "三兵衛、秋の感謝フェア",
+                    "path": "spine/common/005/common_005_004/root.json",
+                    "icons": "icons/05004.png"
+                },
+                {
+                    "costumeId": 5,
+                    "costumeName": "都立神瑞学園高校",
+                    "path": "spine/common/005/common_005_005/root.json",
+                    "icons": "icons/05005.png"
+                },
+                {
+                    "costumeId": 6,
+                    "costumeName": "にこにこワクワク 最高潮！",
+                    "path": "spine/common/005/common_005_006/root.json",
+                    "icons": "icons/05006.png"
+                },
+                {
+                    "costumeId": 7,
+                    "costumeName": "水着(2020年)",
+                    "path": "spine/common/005/common_005_007/root.json",
+                    "icons": "icons/05007.png"
+                },
+                {
+                    "costumeId": 8,
+                    "costumeName": "僕らの声優力研究所",
+                    "path": "spine/common/005/common_005_008/root.json",
+                    "icons": "icons/05008.png"
+                },
+                {
+                    "costumeId": 9,
+                    "costumeName": "元気のオーラ・バトル",
+                    "path": "spine/common/005/common_005_009/root.json",
+                    "icons": "icons/05009.png"
+                },
+                {
+                    "costumeId": 10,
+                    "costumeName": "天童重工進出ス！",
+                    "path": "spine/common/005/common_005_010/root.json",
+                    "icons": "icons/05010.png"
+                },
+                {
+                    "costumeId": 11,
+                    "costumeName": "夏制服",
+                    "path": "spine/common/005/common_005_011/root.json",
+                    "icons": "icons/05011.png"
+                },
+                {
+                    "costumeId": 12,
+                    "costumeName": "ままならない戦場",
+                    "path": "spine/common/005/common_005_012/root.json",
+                    "icons": "icons/05012.png"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "赤川千紗",
+            "Spine": [
+                {
+                    "costumeId": 1,
+                    "costumeName": "私服",
+                    "path": "spine/common/006/common_006_001/root.json",
+                    "icons": "icons/06001.png"
+                },
+                {
+                    "costumeId": 2,
+                    "costumeName": "レッスン着",
+                    "path": "spine/common/006/common_006_002/root.json",
+                    "icons": "icons/06002.png"
+                },
+                {
+                    "costumeId": 3,
+                    "costumeName": "Forever Friends",
+                    "path": "spine/common/006/common_006_003/root.json",
+                    "icons": "icons/06003.png"
+                },
+                {
+                    "costumeId": 4,
+                    "costumeName": "小さな当たり前と大きな幸せ",
+                    "path": "spine/common/006/common_006_004/root.json",
+                    "icons": "icons/06004.png"
+                },
+                {
+                    "costumeId": 5,
+                    "costumeName": "笑顔で空を灯して",
+                    "path": "spine/common/006/common_006_005/root.json",
+                    "icons": "icons/06005.png"
+                },
+                {
+                    "costumeId": 6,
+                    "costumeName": "今日は明日の思い出",
+                    "path": "spine/common/006/common_006_006/root.json",
+                    "icons": "icons/06006.png"
+                },
+                {
+                    "costumeId": 7,
+                    "costumeName": "にこにこワクワク 最高潮！",
+                    "path": "spine/common/006/common_006_007/root.json",
+                    "icons": "icons/06007.png"
+                },
+                {
+                    "costumeId": 8,
+                    "costumeName": "水着(2020年)",
+                    "path": "spine/common/006/common_006_008/root.json",
+                    "icons": "icons/06008.png"
+                },
+                {
+                    "costumeId": 9,
+                    "costumeName": "魔法をかけて",
+                    "path": "spine/common/006/common_006_009/root.json",
+                    "icons": "icons/06009.png"
+                },
+                {
+                    "costumeId": 10,
+                    "costumeName": "部屋の中の晴々",
+                    "path": "spine/common/006/common_006_010/root.json",
+                    "icons": "icons/06010.png"
+                },
+                {
+                    "costumeId": 11,
+                    "costumeName": "オーバー・ザ・シー",
+                    "path": "spine/common/006/common_006_011/root.json",
+                    "icons": "icons/06011.png"
+                },
+                {
+                    "costumeId": 12,
+                    "costumeName": "ハッピー・キングダムズ",
+                    "path": "spine/common/006/common_006_012/root.json",
+                    "icons": "icons/06012.png"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "name": "恵庭あいり",
+            "Spine": [
+                {
+                    "costumeId": 1,
+                    "costumeName": "私服",
+                    "path": "spine/common/007/common_007_001/root.json",
+                    "icons": "icons/07001.png"
+                },
+                {
+                    "costumeId": 2,
+                    "costumeName": "レッスン着",
+                    "path": "spine/common/007/common_007_002/root.json",
+                    "icons": "icons/07002.png"
+                },
+                {
+                    "costumeId": 3,
+                    "costumeName": "Forever Friends",
+                    "path": "spine/common/007/common_007_003/root.json",
+                    "icons": "icons/07003.png"
+                },
+                {
+                    "costumeId": 4,
+                    "costumeName": "導きのロストラビット",
+                    "path": "spine/common/007/common_007_004/root.json",
+                    "icons": "icons/07004.png"
+                },
+                {
+                    "costumeId": 5,
+                    "costumeName": "春風トラベリング",
+                    "path": "spine/common/007/common_007_005/root.json",
+                    "icons": "icons/07005.png"
+                },
+                {
+                    "costumeId": 6,
+                    "costumeName": "不明",
+                    "path": "spine/common/007/common_007_006/root.json",
+                    "icons": "icons/07006.png"
+                },
+                {
+                    "costumeId": 7,
+                    "costumeName": "にこにこワクワク 最高潮！",
+                    "path": "spine/common/007/common_007_007/root.json",
+                    "icons": "icons/07007.png"
+                },
+                {
+                    "costumeId": 8,
+                    "costumeName": "水着(2020年)",
+                    "path": "spine/common/007/common_007_008/root.json",
+                    "icons": "icons/07008.png"
+                },
+                {
+                    "costumeId": 9,
+                    "costumeName": "雨に唄えば",
+                    "path": "spine/common/007/common_007_009/root.json",
+                    "icons": "icons/07009.png"
+                },
+                {
+                    "costumeId": 10,
+                    "costumeName": "ウォーターキャンディ",
+                    "path": "spine/common/007/common_007_010/root.json",
+                    "icons": "icons/07010.png"
+                },
+                {
+                    "costumeId": 11,
+                    "costumeName": "夏制服",
+                    "path": "spine/common/007/common_007_011/root.json",
+                    "icons": "icons/07011.png"
+                },
+                {
+                    "costumeId": 12,
+                    "costumeName": "KAZAHANA",
+                    "path": "spine/common/007/common_007_012/root.json",
+                    "icons": "icons/07012.png"
+                },
+                {
+                    "costumeId": 13,
+                    "costumeName": "未来永遠のともだち",
+                    "path": "spine/common/007/common_007_013/root.json",
+                    "icons": "icons/07013.png"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "name": "九条柚葉",
+            "Spine": [
+                {
+                    "costumeId": 1,
+                    "costumeName": "私服",
+                    "path": "spine/common/008/common_008_001/root.json",
+                    "icons": "icons/08001.png"
+                },
+                {
+                    "costumeId": 2,
+                    "costumeName": "レッスン着",
+                    "path": "spine/common/008/common_008_002/root.json",
+                    "icons": "icons/08002.png"
+                },
+                {
+                    "costumeId": 3,
+                    "costumeName": "Forever Friends",
+                    "path": "spine/common/008/common_008_003/root.json",
+                    "icons": "icons/08003.png"
+                },
+                {
+                    "costumeId": 4,
+                    "costumeName": "What a girl wants",
+                    "path": "spine/common/008/common_008_004/root.json",
+                    "icons": "icons/08004.png"
+                },
+                {
+                    "costumeId": 5,
+                    "costumeName": "私立星漣女子学院",
+                    "path": "spine/common/008/common_008_005/root.json",
+                    "icons": "icons/08005.png"
+                },
+                {
+                    "costumeId": 6,
+                    "costumeName": "UP！",
+                    "path": "spine/common/008/common_008_006/root.json",
+                    "icons": "icons/08006.png"
+                },
+                {
+                    "costumeId": 7,
+                    "costumeName": "にこにこワクワク 最高潮！",
+                    "path": "spine/common/008/common_008_007/root.json",
+                    "icons": "icons/08007.png"
+                },
+                {
+                    "costumeId": 8,
+                    "costumeName": "水着(2020年)",
+                    "path": "spine/common/008/common_008_008/root.json",
+                    "icons": "icons/08008.png"
+                },
+                {
+                    "costumeId": 9,
+                    "costumeName": "ユー・ガット・エール",
+                    "path": "spine/common/008/common_008_009/root.json",
+                    "icons": "icons/08009.png"
+                },
+                {
+                    "costumeId": 10,
+                    "costumeName": "harvest ＆ pup",
+                    "path": "spine/common/008/common_008_010/root.json",
+                    "icons": "icons/08010.png"
+                },
+                {
+                    "costumeId": 11,
+                    "costumeName": "パッシング・トーキョー",
+                    "path": "spine/common/008/common_008_011/root.json",
+                    "icons": "icons/08011.png"
+                },
+                {
+                    "costumeId": 12,
+                    "costumeName": "夏制服",
+                    "path": "spine/common/008/common_008_012/root.json",
+                    "icons": "icons/08012.png"
+                },
+                {
+                    "costumeId": 13,
+                    "costumeName": "振袖",
+                    "path": "spine/common/008/common_008_013/root.json",
+                    "icons": "icons/08013.png"
+                },
+                {
+                    "costumeId": 14,
+                    "costumeName": "Feast and Family",
+                    "path": "spine/common/008/common_008_014/root.json",
+                    "icons": "icons/08014.png"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "name": "夜峰美晴",
+            "Spine": [
+                {
+                    "costumeId": 1,
+                    "costumeName": "私服",
+                    "path": "spine/common/009/common_009_001/root.json",
+                    "icons": "icons/09001.png"
+                },
+                {
+                    "costumeId": 2,
+                    "costumeName": "レッスン着",
+                    "path": "spine/common/009/common_009_002/root.json",
+                    "icons": "icons/09002.png"
+                },
+                {
+                    "costumeId": 3,
+                    "costumeName": "Forever Friends",
+                    "path": "spine/common/009/common_009_003/root.json",
+                    "icons": "icons/09003.png"
+                },
+                {
+                    "costumeId": 4,
+                    "costumeName": "虹を見たあの日の",
+                    "path": "spine/common/009/common_009_004/root.json",
+                    "icons": "icons/09004.png"
+                },
+                {
+                    "costumeId": 5,
+                    "costumeName": "スイート・セレナーデ",
+                    "path": "spine/common/009/common_009_005/root.json",
+                    "icons": "icons/09005.png"
+                },
+                {
+                    "costumeId": 6,
+                    "costumeName": "Secret Garden",
+                    "path": "spine/common/009/common_009_006/root.json",
+                    "icons": "icons/09006.png"
+                },
+                {
+                    "costumeId": 7,
+                    "costumeName": "雲がちぎれる時を",
+                    "path": "spine/common/009/common_009_007/root.json",
+                    "icons": "icons/09007.png"
+                },
+                {
+                    "costumeId": 8,
+                    "costumeName": "Good meal, Good life",
+                    "path": "spine/common/009/common_009_008/root.json",
+                    "icons": "icons/09008.png"
+                },
+                {
+                    "costumeId": 9,
+                    "costumeName": "水着(2020年)",
+                    "path": "spine/common/009/common_009_009/root.json",
+                    "icons": "icons/09009.png"
+                },
+                {
+                    "costumeId": 10,
+                    "costumeName": "真夏の夜の夢",
+                    "path": "spine/common/009/common_009_010/root.json",
+                    "icons": "icons/09010.png"
+                },
+                {
+                    "costumeId": 11,
+                    "costumeName": "opus 66",
+                    "path": "spine/common/009/common_009_011/root.json",
+                    "icons": "icons/09011.png"
+                },
+                {
+                    "costumeId": 12,
+                    "costumeName": "何度も言わせて",
+                    "path": "spine/common/009/common_009_012/root.json",
+                    "icons": "icons/09012.png"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "name": "神室絢",
+            "Spine": [
+                {
+                    "costumeId": 1,
+                    "costumeName": "私服",
+                    "path": "spine/common/010/common_010_001/root.json",
+                    "icons": "icons/10001.png"
+                },
+                {
+                    "costumeId": 2,
+                    "costumeName": "レッスン着",
+                    "path": "spine/common/010/common_010_002/root.json",
+                    "icons": "icons/10002.png"
+                },
+                {
+                    "costumeId": 3,
+                    "costumeName": "Forever Friends",
+                    "path": "spine/common/010/common_010_003/root.json",
+                    "icons": "icons/10003.png"
+                },
+                {
+                    "costumeId": 4,
+                    "costumeName": "in other words",
+                    "path": "spine/common/010/common_010_004/root.json",
+                    "icons": "icons/10004.png"
+                },
+                {
+                    "costumeId": 6,
+                    "costumeName": "Good meal, Good life",
+                    "path": "spine/common/010/common_010_006/root.json",
+                    "icons": "icons/10006.png"
+                },
+                {
+                    "costumeId": 7,
+                    "costumeName": "水着(2020年)",
+                    "path": "spine/common/010/common_010_007/root.json",
+                    "icons": "icons/10007.png"
+                },
+                {
+                    "costumeId": 8,
+                    "costumeName": "back on top",
+                    "path": "spine/common/010/common_010_008/root.json",
+                    "icons": "icons/10008.png"
+                },
+                {
+                    "costumeId": 9,
+                    "costumeName": "End of twilight",
+                    "path": "spine/common/010/common_010_009/root.json",
+                    "icons": "icons/10009.png"
+                },
+                {
+                    "costumeId": 10,
+                    "costumeName": "above the promise",
+                    "path": "spine/common/010/common_010_010/root.json",
+                    "icons": "icons/10010.png"
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "name": "宮路まほろ",
+            "Spine": [
+                {
+                    "costumeId": 1,
+                    "costumeName": "私服",
+                    "path": "spine/common/011/common_011_001/root.json",
+                    "icons": "icons/11001.png"
+                },
+                {
+                    "costumeId": 2,
+                    "costumeName": "レッスン着",
+                    "path": "spine/common/011/common_011_002/root.json",
+                    "icons": "icons/11002.png"
+                },
+                {
+                    "costumeId": 3,
+                    "costumeName": "Forever Friends",
+                    "path": "spine/common/011/common_011_003/root.json",
+                    "icons": "icons/11003.png"
+                },
+                {
+                    "costumeId": 4,
+                    "costumeName": "ユメ・ウツツ・Unconscious",
+                    "path": "spine/common/011/common_011_004/root.json",
+                    "icons": "icons/11004.png"
+                },
+                {
+                    "costumeId": 5,
+                    "costumeName": "DAYS and the DAY",
+                    "path": "spine/common/011/common_011_005/root.json",
+                    "icons": "icons/11005.png"
+                },
+                {
+                    "costumeId": 6,
+                    "costumeName": "孤独ノスヽメ",
+                    "path": "spine/common/011/common_011_006/root.json",
+                    "icons": "icons/11006.png"
+                },
+                {
+                    "costumeId": 7,
+                    "costumeName": "Good meal, Good life",
+                    "path": "spine/common/011/common_011_007/root.json",
+                    "icons": "icons/11007.png"
+                },
+                {
+                    "costumeId": 8,
+                    "costumeName": "水着(2020年)",
+                    "path": "spine/common/011/common_011_008/root.json",
+                    "icons": "icons/11008.png"
+                },
+                {
+                    "costumeId": 9,
+                    "costumeName": "way of life, where to go?",
+                    "path": "spine/common/011/common_011_009/root.json",
+                    "icons": "icons/11009.png"
+                },
+                {
+                    "costumeId": 10,
+                    "costumeName": "DELIGHT & DAYLIGHT",
+                    "path": "spine/common/011/common_011_010/root.json",
+                    "icons": "icons/11010.png"
+                },
+                {
+                    "costumeId": 11,
+                    "costumeName": "RING! RING! RING!",
+                    "path": "spine/common/011/common_011_011/root.json",
+                    "icons": "icons/11011.png"
+                },
+                {
+                    "costumeId": 12,
+                    "costumeName": "You saw my soul",
+                    "path": "spine/common/011/common_011_012/root.json",
+                    "icons": "icons/11012.png"
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "name": "日名倉莉子",
+            "Spine": [
+                {
+                    "costumeId": 1,
+                    "costumeName": "私服",
+                    "path": "spine/common/012/common_012_001/root.json",
+                    "icons": "icons/12001.png"
+                },
+                {
+                    "costumeId": 2,
+                    "costumeName": "レッスン着",
+                    "path": "spine/common/012/common_012_002/root.json",
+                    "icons": "icons/12002.png"
+                },
+                {
+                    "costumeId": 3,
+                    "costumeName": "Forever Friends",
+                    "path": "spine/common/012/common_012_003/root.json",
+                    "icons": "icons/12003.png"
+                },
+                {
+                    "costumeId": 4,
+                    "costumeName": "エンドオブサマーを見送って",
+                    "path": "spine/common/012/common_012_004/root.json",
+                    "icons": "icons/12004.png"
+                },
+                {
+                    "costumeId": 5,
+                    "costumeName": "パウダーシュガーの降る頃に",
+                    "path": "spine/common/012/common_012_005/root.json",
+                    "icons": "icons/12005.png"
+                },
+                {
+                    "costumeId": 6,
+                    "costumeName": "タイムコールが聴こえる",
+                    "path": "spine/common/012/common_012_006/root.json",
+                    "icons": "icons/12006.png"
+                },
+                {
+                    "costumeId": 7,
+                    "costumeName": "Good meal, Good life",
+                    "path": "spine/common/012/common_012_007/root.json",
+                    "icons": "icons/12007.png"
+                },
+                {
+                    "costumeId": 8,
+                    "costumeName": "水着(2020年)",
+                    "path": "spine/common/012/common_012_008/root.json",
+                    "icons": "icons/12008.png"
+                },
+                {
+                    "costumeId": 9,
+                    "costumeName": "オフショアの乙女",
+                    "path": "spine/common/012/common_012_009/root.json",
+                    "icons": "icons/12009.png"
+                },
+                {
+                    "costumeId": 10,
+                    "costumeName": "私をビーチに連れてって",
+                    "path": "spine/common/012/common_012_010/root.json",
+                    "icons": "icons/12010.png"
+                },
+                {
+                    "costumeId": 11,
+                    "costumeName": "帰れない？帰らない？",
+                    "path": "spine/common/012/common_012_011/root.json",
+                    "icons": "icons/12011.png"
+                },
+                {
+                    "costumeId": 12,
+                    "costumeName": "青空バイクに恋してる",
+                    "path": "spine/common/012/common_012_012/root.json",
+                    "icons": "icons/12012.png"
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "name": "丸山利恵",
+            "Spine": [
+                {
+                    "costumeId": 1,
+                    "costumeName": "私服",
+                    "path": "spine/common/013/common_013_001/root.json",
+                    "icons": "icons/13001.png"
+                },
+                {
+                    "costumeId": 2,
+                    "costumeName": "レッスン着",
+                    "path": "spine/common/013/common_013_002/root.json",
+                    "icons": "icons/13002.png"
+                },
+                {
+                    "costumeId": 3,
+                    "costumeName": "Forever Friends",
+                    "path": "spine/common/013/common_013_003/root.json",
+                    "icons": "icons/13003.png"
+                },
+                {
+                    "costumeId": 4,
+                    "costumeName": "Reach For The World!",
+                    "path": "spine/common/013/common_013_004/root.json",
+                    "icons": "icons/13004.png"
+                },
+                {
+                    "costumeId": 5,
+                    "costumeName": "カストールの安息日",
+                    "path": "spine/common/013/common_013_005/root.json",
+                    "icons": "icons/13005.png"
+                },
+                {
+                    "costumeId": 6,
+                    "costumeName": "炎獄式ビターエンド",
+                    "path": "spine/common/013/common_013_006/root.json",
+                    "icons": "icons/13006.png"
+                },
+                {
+                    "costumeId": 7,
+                    "costumeName": "MiRAGE! MiRAGE!!",
+                    "path": "spine/common/013/common_013_007/root.json",
+                    "icons": "icons/13007.png"
+                },
+                {
+                    "costumeId": 8,
+                    "costumeName": "水着(2020年)",
+                    "path": "spine/common/013/common_013_008/root.json",
+                    "icons": "icons/13008.png"
+                },
+                {
+                    "costumeId": 9,
+                    "costumeName": "冷酷なる悪魔のエクスキューション",
+                    "path": "spine/common/013/common_013_009/root.json",
+                    "icons": "icons/13009.png"
+                },
+                {
+                    "costumeId": 10,
+                    "costumeName": "誰ソ彼のオーダー",
+                    "path": "spine/common/013/common_013_010/root.json",
+                    "icons": "icons/13010.png"
+                },
+                {
+                    "costumeId": 11,
+                    "costumeName": "星辰揃いし夜の囁き",
+                    "path": "spine/common/013/common_013_011/root.json",
+                    "icons": "icons/13011.png"
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "name": "宇津木聡里",
+            "Spine": [
+                {
+                    "costumeId": 1,
+                    "costumeName": "私服",
+                    "path": "spine/common/014/common_014_001/root.json",
+                    "icons": "icons/14001.png"
+                },
+                {
+                    "costumeId": 2,
+                    "costumeName": "レッスン着",
+                    "path": "spine/common/014/common_014_002/root.json",
+                    "icons": "icons/14002.png"
+                },
+                {
+                    "costumeId": 3,
+                    "costumeName": "Forever Friends",
+                    "path": "spine/common/014/common_014_003/root.json",
+                    "icons": "icons/14003.png"
+                },
+                {
+                    "costumeId": 4,
+                    "costumeName": "勝利の栄光を君に",
+                    "path": "spine/common/014/common_014_004/root.json",
+                    "icons": "icons/14004.png"
+                },
+                {
+                    "costumeId": 5,
+                    "costumeName": "ウェーニーウィーディーウィーキー",
+                    "path": "spine/common/014/common_014_005/root.json",
+                    "icons": "icons/14005.png"
+                },
+                {
+                    "costumeId": 6,
+                    "costumeName": "MiRAGE! MiRAGE!!",
+                    "path": "spine/common/014/common_014_006/root.json",
+                    "icons": "icons/14006.png"
+                },
+                {
+                    "costumeId": 7,
+                    "costumeName": "水着(2020年)",
+                    "path": "spine/common/014/common_014_007/root.json",
+                    "icons": "icons/14007.png"
+                },
+                {
+                    "costumeId": 8,
+                    "costumeName": "雲の向こうは青空",
+                    "path": "spine/common/014/common_014_008/root.json",
+                    "icons": "icons/14008.png"
+                },
+                {
+                    "costumeId": 9,
+                    "costumeName": "在りし日の詩",
+                    "path": "spine/common/014/common_014_009/root.json",
+                    "icons": "icons/14009.png"
+                },
+                {
+                    "costumeId": 10,
+                    "costumeName": "ステラ・ハント",
+                    "path": "spine/common/014/common_014_010/root.json",
+                    "icons": "icons/14010.png"
+                },
+                {
+                    "costumeId": 11,
+                    "costumeName": "プルス・ウルトラ",
+                    "path": "spine/common/014/common_014_011/root.json",
+                    "icons": "icons/14011.png"
+                },
+                {
+                    "costumeId": 12,
+                    "costumeName": "ゲルトルート",
+                    "path": "spine/common/014/common_014_012/root.json",
+                    "icons": "icons/14012.png"
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "name": "明神凛音",
+            "Spine": [
+                {
+                    "costumeId": 1,
+                    "costumeName": "私服",
+                    "path": "spine/common/015/common_015_001/root.json",
+                    "icons": "icons/15001.png"
+                },
+                {
+                    "costumeId": 2,
+                    "costumeName": "レッスン着",
+                    "path": "spine/common/015/common_015_002/root.json",
+                    "icons": "icons/15002.png"
+                },
+                {
+                    "costumeId": 3,
+                    "costumeName": "Forever Friends",
+                    "path": "spine/common/015/common_015_003/root.json",
+                    "icons": "icons/15003.png"
+                },
+                {
+                    "costumeId": 4,
+                    "costumeName": "フィルムいっぱいの思い出を",
+                    "path": "spine/common/015/common_015_004/root.json",
+                    "icons": "icons/15004.png"
+                },
+                {
+                    "costumeId": 5,
+                    "costumeName": "極彩色で笑いたい",
+                    "path": "spine/common/015/common_015_005/root.json",
+                    "icons": "icons/15005.png"
+                },
+                {
+                    "costumeId": 6,
+                    "costumeName": "MiRAGE! MiRAGE!!",
+                    "path": "spine/common/015/common_015_006/root.json",
+                    "icons": "icons/15006.png"
+                },
+                {
+                    "costumeId": 7,
+                    "costumeName": "水着(2020年)",
+                    "path": "spine/common/015/common_015_007/root.json",
+                    "icons": "icons/15007.png"
+                },
+                {
+                    "costumeId": 8,
+                    "costumeName": "ビン詰めの花畑",
+                    "path": "spine/common/015/common_015_008/root.json",
+                    "icons": "icons/15008.png"
+                },
+                {
+                    "costumeId": 9,
+                    "costumeName": "夏の日のイリュージョン",
+                    "path": "spine/common/015/common_015_009/root.json",
+                    "icons": "icons/15009.png"
+                },
+                {
+                    "costumeId": 10,
+                    "costumeName": "ゆうやけ小路",
+                    "path": "spine/common/015/common_015_010/root.json",
+                    "icons": "icons/15010.png"
+                },
+                {
+                    "costumeId": 11,
+                    "costumeName": "ぱーふぇくとわーるど",
+                    "path": "spine/common/015/common_015_011/root.json",
+                    "icons": "icons/15011.png"
+                }
+            ]
+        },
+        {
+            "id": 16,
+            "name": "遠見鳴",
+            "Spine": [
+                {
+                    "costumeId": 1,
+                    "costumeName": "私服",
+                    "path": "spine/common/016/common_016_001/root.json",
+                    "icons": "icons/16001.png"
+                },
+                {
+                    "costumeId": 2,
+                    "costumeName": "レッスン着",
+                    "path": "spine/common/016/common_016_002/root.json",
+                    "icons": "icons/16002.png"
+                },
+                {
+                    "costumeId": 3,
+                    "costumeName": "Forever Friends",
+                    "path": "spine/common/016/common_016_003/root.json",
+                    "icons": "icons/16003.png"
+                },
+                {
+                    "costumeId": 4,
+                    "costumeName": "ハニーバタフライ",
+                    "path": "spine/common/016/common_016_004/root.json",
+                    "icons": "icons/16004.png"
+                },
+                {
+                    "costumeId": 5,
+                    "costumeName": "Only two twin primes",
+                    "path": "spine/common/016/common_016_005/root.json",
+                    "icons": "icons/16005.png"
+                },
+                {
+                    "costumeId": 7,
+                    "costumeName": "MiRAGE! MiRAGE!!",
+                    "path": "spine/common/016/common_016_007/root.json",
+                    "icons": "icons/16007.png"
+                },
+                {
+                    "costumeId": 8,
+                    "costumeName": "水着(2020年)",
+                    "path": "spine/common/016/common_016_008/root.json",
+                    "icons": "icons/16008.png"
+                },
+                {
+                    "costumeId": 9,
+                    "costumeName": "バレット・タイム",
+                    "path": "spine/common/016/common_016_009/root.json",
+                    "icons": "icons/16009.png"
+                },
+                {
+                    "costumeId": 10,
+                    "costumeName": "Red Alert",
+                    "path": "spine/common/016/common_016_010/root.json",
+                    "icons": "icons/16010.png"
+                },
+                {
+                    "costumeId": 11,
+                    "costumeName": "PORTAL",
+                    "path": "spine/common/016/common_016_011/root.json",
+                    "icons": "icons/16011.png"
+                },
+                {
+                    "costumeId": 12,
+                    "costumeName": "アクターズ・ギルド",
+                    "path": "spine/common/016/common_016_012/root.json",
+                    "icons": "icons/16012.png"
+                },
+                {
+                    "costumeId": 13,
+                    "costumeName": "Usual Cases",
+                    "path": "spine/common/016/common_016_013/root.json",
+                    "icons": "icons/16013.png"
+                }
+            ]
+        },
+        {
+            "id": 101,
+            "name": "鳳真咲",
+            "Spine": [
+                {
+                    "costumeId": 1,
+                    "costumeName": "通常",
+                    "path": "spine/common/101/common_101_001/root.json",
+                    "icons": "",
+                    "word" : "鳳"
+                },
+                {
+                    "costumeId": 2,
+                    "costumeName": "レッスン",
+                    "path": "spine/lessonaction/101/lessonaction_101_001/root.json",
+                    "icons": "",
+                    "word" : "鳳"
+                }
+            ]
+        },
+        {
+            "id": 102,
+            "name": "五十鈴りお",
+            "Spine": [
+                {
+                    "costumeId": 1,
+                    "costumeName": "通常",
+                    "path": "spine/common/102/common_102_001/root.json",
+                    "icons": "",
+                    "word" : "五"
+                },
+                {
+                    "costumeId": 2,
+                    "costumeName": "レッスン",
+                    "path": "spine/lessonaction/102/lessonaction_102_001/root.json",
+                    "icons": "",
+                    "word" : "五"
+                }
+            ]
+        },
+        {
+            "id": 103,
+            "name": "由良桐香",
+            "Spine": [
+                {
+                    "costumeId": 1,
+                    "costumeName": "通常",
+                    "path": "spine/common/103/common_103_001/root.json",
+                    "icons": "",
+                    "word" : "由"
+                },
+                {
+                    "costumeId": 2,
+                    "costumeName": "レッスン",
+                    "path": "spine/lessonaction/103/lessonaction_103_001/root.json",
+                    "icons": "",
+                    "word" : "由"
+                }
+            ]
+        },
+        {
+            "id": 901,
+            "name": "お亀さん",
+            "Spine": [
+                {
+                    "costumeId": 1,
+                    "costumeName": "ホーム",
+                    "path": "spine/housing/root.json",
+                    "icons": "",
+                    "word" : "亀"
+                }
+            ]
+        }
+    ]
+}

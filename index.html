@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Spine Model Viewer | CUE!-see you everyday-</title>
+        <link rel="icon" href="./Assets/favicon.ico" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Spine Model Viewer | CUE!-see you everyday-" />
+
+        <!-- twitter -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="" />
+        <meta name="twitter:title" content="Spine Model Viewer | CUE!-see you everyday-" />
+        <meta name="twitter:description" content="Spine Model Viewer | CUE!-see you everyday-" />
+        <!-- <meta name="twitter:image" content="" /> -->
+        
+        <!-- facebook -->
+        <meta property="og:title" content="Spine Model Viewer | CUE!-see you everyday-" />
+        <meta property="og:site_name" content="Spine Model Viewer | CUE!-see you everyday-" />
+        <meta property="og:description" content="Spine Model Viewer | CUE!-see you everyday-" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="" />
+        <!-- <meta property="og:image" content="%PUBLIC_URL%" /> -->
+
+        <link rel="stylesheet" type="text/css" href="./index.css">
+    </head>
+    <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root">
+          <!-- 左邊導覽列 -->
+          <div id="left">
+            <div id="sidebar">
+              <!-- <a href="./index.html"> -->
+                <img id="logo" src="./Assets/favicon.png">
+              <!-- </a> -->
+              <button class="defaultBtn" id="settingBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings" width="42" height="42" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z"></path>
+                  <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+               </svg>
+              </button>
+              <button class="defaultBtn" id="addModelBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus" width="42" height="42" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 5l0 14"></path>
+                  <path d="M5 12l14 0"></path>
+               </svg>
+              </button>
+              <div id="icon_list">
+                <!-- <div class="delMinBtn"></div> -->
+                <!-- <button class="iconBtn"></button> -->
+                <!-- <button class="wordBtn">亀</button> -->
+              </div>
+            </div>
+          </div>
+          <!-- 選單 -->
+          <div id="options" style="display: none;">
+            <div class="header">
+               <h3 id="title">Setting</h3>
+               <button id="closebtn">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="37" height="37" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M15 6l-6 6l6 6"></path>
+               </svg>
+               </button>
+            </div>
+
+             <!-- Add Model -->
+             <div class="content" id='addModel' style="display: none;">
+              <div class="controll-list">
+                <div class="controll-block">
+                  <p class="nomralfont">Character</p>
+                  <select class="form-select" id="characterSelect">
+                    <option></option>
+                  </select>
+                </div>
+                <div class="controll-block">
+                  <p class="nomralfont">Costume</p>
+                  <select class="form-select" id="costumeSelect">
+                  </select>
+                </div>
+              </div>
+              <div class="controllBtn-list">
+                <button id="addSpineBtn">Add</button>
+              </div>
+            </div>
+
+            <!-- Setting -->
+            <div class="content" id="setting" style="display: none;">
+              <p class="nomralfont">製作中...</p>
+            </div>
+
+            <!-- Spine -->
+            <div class="content" id="spine-info" style="display: none;">
+              <!-- Spine信息 -->
+              <div class="info">
+                <p class="ModelName" id="info-ModelName">Name</p>
+                <p class="CostumeName" id="info-CostumeName">Name</p>
+              </div>
+              <!-- 顯示 -->
+              <!-- <button class="collapsible">Display</button>
+              <div class="collapsible-content" id="Display-collapsible">
+                <div class="collapsible-list" id="Display-list">
+                  <button>BBB</button>
+                  <button>BBB</button>
+                </div>
+              </div> -->
+              <!-- 動作列表 -->
+              <button class="collapsible">Animations</button>
+              <div class="collapsible-content" id="Animation-collapsible">
+                <div class="collapsible-list" id="Animation-list">
+                  
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+          <!-- viewer -->
+          <div id="viewer"></div>
+        </div>
+    </body>
+
+    <!-- Pixijs -->
+    <script src="https://pixijs.download/v7.0.4/pixi.js"></script>
+    <!-- Pixi-Spine -->
+    <script src="./Libs/pixi-spine-3.8.js" type="text/javascript"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js" type="text/javascript"></script>
+    <!-- gsap Pixijs Plugin-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/PixiPlugin.min.js" type="text/javascript"></script>
+    <!-- Testing gui -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.9/dat.gui.min.js" integrity="sha512-WoO4Ih0CDOSLYafy22wZD/mcJ7k0ESLqtQsFa6zFKnEUrbtuGU+GkLtVhgt93xa2qewG5gKEC6CWlN8OaCTSVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- ownjs -->
+    <script src="./index.js" type="text/javascript"></script>
+    
+</html>
