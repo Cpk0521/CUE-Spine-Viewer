@@ -220,6 +220,7 @@ const Toggle_Option_Panel = (curr) => {
     if(curr == Option_Panel_Staute.curr && Option_Panel_Staute.isopen){
         opt.style.display = "none";
         Option_Panel_Staute.isopen = false
+        console.log('1')
         return
     }
 
@@ -227,13 +228,16 @@ const Toggle_Option_Panel = (curr) => {
         opt.style.display = "none";
         Option_Panel_Staute.isopen = false
         Option_Panel_Staute.curr = ''
+        console.log('2')
         return
     }
 
-    if(!Option_Panel_Staute.isopen || curr != Option_Panel_Staute.curr){
+    console.log(curr, Option_Panel_Staute)
+    if((!Option_Panel_Staute.isopen || curr != Option_Panel_Staute.curr )&& curr != 'close'){
         opt.style.display = "block";
         Option_Panel_Staute.isopen = true
         Option_Panel_Staute.curr = curr
+        console.log('3')
         return
     }
 
@@ -380,7 +384,7 @@ document.getElementById('addSpineBtn').onclick = async() => {
         }
         // console.log('tstsetsts')
         btn.remove()
-        Toggle_Option_Panel(spinemodel.Label)
+        Toggle_Option_Panel('close')
         appViewer.removeSpine(spinemodel.Label)
     }
     btn.append(div)
