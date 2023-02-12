@@ -5,7 +5,7 @@ const loader = PIXI.Assets
 const Option_Panel = {
     isopen : false,
     curr : '',
-    panel : document.getElementById('options'),
+    panel : document.getElementById('panel'),
     title : document.getElementById('title'),    
     addModel_Content : document.getElementById('addModel'),
     setting_Content : document.getElementById('setting'),
@@ -159,8 +159,12 @@ class SpineModel{
     setLoop(bool){
         this._loopbool = bool
         if(this._spine.state.tracks.length > 0){
-            this.playAnimation(0, this._currAnimation, bool)
+            this._spine.state.setAnimation(0, this._currAnimation, this._loopbool);
         }
+    }
+
+    get AnimLoop(){
+        return this._loopbool
     }
 
     destroy(){
@@ -277,9 +281,11 @@ Array.from(document.getElementsByClassName('collapsible')).forEach(x => {
 const setup_Spine_Panel = (_spineModel) => {
     let ModelName = document.getElementById('info-ModelName')
     let CostumeName = document.getElementById('info-CostumeName')
+    let anim_loop = document.getElementById('anim_loop')
 
     ModelName.innerHTML = _spineModel.Character
     CostumeName.innerHTML = _spineModel.Costume
+    anim_loop.checked = _spineModel.AnimLoop
 
     Array.from(document.getElementsByClassName('collapsible')).forEach(x => {
         x.classList.remove('active')
@@ -301,6 +307,10 @@ const setup_Spine_Panel = (_spineModel) => {
 
         Animation_list.append(anim_btn)
     })
+
+    anim_loop.onchange = function() {
+        _spineModel.setLoop(this.checked)
+    }
 
 }
 

@@ -13,8 +13,14 @@
     src: url(./Assets/font/FOT_RodinCattleya_Pro_DB.otf);
 }
 
-.nomralfont{
-    font-size: 1.2rem;
+
+.panel_Blod_Font {
+    font-size: large;
+    font-family: RodinCattleya_Pro_B;
+}
+
+.panel_light_Font {
+    font-family: RodinCattleya_Pro_EB;
 }
 
 * {
@@ -152,7 +158,7 @@ img{
 
 /* 選單 */
 
-#options {
+#panel {
     width: 300px;
     height: 100vh;
     background-color: #36393f;
@@ -302,7 +308,7 @@ img{
 
 /* 選單 > Spine */
 .info {
-    padding: 8px 0px;
+    padding: 8px 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -318,6 +324,28 @@ img{
 .CostumeName {
     margin: auto;
     font-size: .9rem;
+}
+
+.info-options {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-options > label {
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-options > label > input[type='checkbox'] {
+    cursor: pointer;
+    accent-color: #2f3136;
+    width: 20px;
+    height: 20px;
 }
 
 .collapsible {
@@ -404,7 +432,7 @@ img{
 
 @media only screen and (max-width: 401px) {
 
-    #options {
+    #panel {
         width: -webkit-fill-available!important;
     }
 }
