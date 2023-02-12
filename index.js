@@ -2,9 +2,14 @@ var masterlist
 const PixiSpine = PIXI.spine
 const loader = PIXI.Assets
 
-const Option_Panel_Staute = {
+const Option_Panel = {
     isopen : false,
-    curr : ''
+    curr : '',
+    panel : document.getElementById('options'),
+    title : document.getElementById('title'),    
+    addModel_Content : document.getElementById('addModel'),
+    setting_Content : document.getElementById('setting'),
+    spineInfo_Content : document.getElementById('spine-info'),
 }
 
 class spineViewer{
@@ -110,6 +115,7 @@ class SpineModel{
         this._spine = spine
         this._character = character
         this._costume = costume
+        this._loopbool = true
         this._pointerEventBind()
     }
 
@@ -119,8 +125,10 @@ class SpineModel{
        return new this(_spine, character, costume)
     }
 
-    loadAnimation(anim_name){
-        this._spine.state.setAnimation(0, anim_name, true);
+    playAnimation(anim_name){
+        this._currAnimation = anim_name
+        this._spine.state.setAnimation(0, anim_name, this._loopbool);
+        console.log(this._spine.state)
     }
 
     _pointerEventBind(){
@@ -146,6 +154,13 @@ class SpineModel{
         this._spine.on("pointerup", () => (
             this.dragging = false
         ));
+    }
+
+    setLoop(bool){
+        this._loopbool = bool
+        if(this._spine.state.tracks.length > 0){
+            this.playAnimation(0, this._currAnimation, bool)
+        }
     }
 
     destroy(){
@@ -206,40 +221,43 @@ const setup_Costume_Select = (options) => {
     select.innerHTML = inner
 }
 
-const Btn_onClick = (name) => {
-    Array.from(document.getElementsByClassName('content')).forEach(x => {
-        x.style.display = "none";
-    })
-    let content = document.getElementById(name)
-    content.style.display = "block";
-}
-
-const Toggle_Option_Panel = (curr, arg = '') => {
-    let opt = document.getElementById('options')
-    console.log(curr, Option_Panel_Staute)
+const Toggle_Option_Panel = (trigger, action = '') => {
+    let {isopen, curr, panel, title} = Option_Panel
     
-    if(curr == Option_Panel_Staute.curr && Option_Panel_Staute.isopen){
-        opt.style.display = "none";
-        Option_Panel_Staute.isopen = false
+    if(trigger == curr && isopen){
+        panel.style.display = "none";
+        Option_Panel.isopen = false
+        Option_Panel.curr = trigger
+        Array.from(document.getElementsByClassName('content')).forEach(x => {
+            x.style.display = "none";
+        })
         return
     }
 
-    if(Option_Panel_Staute.isopen && curr == 'close'){
-        opt.style.display = "none";
-        Option_Panel_Staute.isopen = false
-        Option_Panel_Staute.curr = ''
+    if(isopen && trigger == 'close'){
+        panel.style.display = "none";
+        Option_Panel.isopen = false
+        Option_Panel.curr = ''
+        Array.from(document.getElementsByClassName('content')).forEach(x => {
+            x.style.display = "none";
+        })
         return
     }
 
-    console.log(curr, Option_Panel_Staute)
-    if((!Option_Panel_Staute.isopen || curr != Option_Panel_Staute.curr )&& arg != 'remove'){
-        opt.style.display = "block";
-        Option_Panel_Staute.isopen = true
-        Option_Panel_Staute.curr = curr
-        return
+    if((!isopen || trigger != curr) && action != 'remove'){
+        panel.style.display = "block";
+        Option_Panel.isopen = true
+        Option_Panel.curr = trigger
+
+        title.innerHTML = action.title
+        Array.from(document.getElementsByClassName('content')).forEach(x => {
+            x.style.display = "none";
+        })
+
+        let content = Option_Panel[`${action.content}_Content`]
+        if(content)
+            content.style.display = "block";
     }
-
-
 }
 
 
@@ -272,16 +290,13 @@ const setup_Spine_Panel = (_spineModel) => {
     let Animation_list = document.getElementById('Animation-list')
     let animations = _spineModel.Animations
     Animation_list.innerHTML = ``
-    // for (let [index, animation] of (animations).entries()) {
-    //     console.log(index, animation)
-    // }
 
     animations.forEach((anim)=>{
         let anim_btn =  document.createElement("button");
         anim_btn.innerHTML = anim.name
 
         anim_btn.onclick = () => {
-            _spineModel.loadAnimation(anim.name)
+            _spineModel.playAnimation(anim.name)
         }
 
         Animation_list.append(anim_btn)
@@ -289,16 +304,20 @@ const setup_Spine_Panel = (_spineModel) => {
 
 }
 
-
-const element = document.getElementById('viewer')
-const appViewer = spineViewer.create(element, {
-    width: element.clientWidth,
-    height : element.clientHeight
-})
-
-
 //-----------------------------------------------------------
 
+/**
+ * create Spine Viewer
+ */
+const viewerdiv = document.getElementById('viewer')
+const appViewer = spineViewer.create(viewerdiv, {
+    width: viewerdiv.clientWidth,
+    height : viewerdiv.clientHeight
+})
+
+/**
+ * load json data
+ */
 loader.load('./Assets/data/spineMaster.json')
     .then((json)=>{
         masterlist = json.Master
@@ -309,29 +328,22 @@ loader.load('./Assets/data/spineMaster.json')
     })
 
 
-// const opt = document.getElementById('options')
-const title = document.getElementById('title')
-
 document.getElementById('settingBtn').onclick = () => {
-    // opt.style.display = "block";
-    Toggle_Option_Panel('setting')
-    title.innerHTML = 'Setting'
-    Btn_onClick('setting')
+    Toggle_Option_Panel('setting', {
+        title : 'Setting',
+        content : 'setting'
+    })
 }
 
 document.getElementById('addModelBtn').onclick = () => {
-    // opt.style.display = "block";
-    Toggle_Option_Panel('addModel')
-    title.innerHTML = 'Add Model'
-    Btn_onClick('addModel')
+    Toggle_Option_Panel('addModel', {
+        title : 'Add Model',
+        content : 'addModel'
+    })
 }
 
 document.getElementById('closebtn').onclick = () => {
-    // opt.style.display = "none";
     Toggle_Option_Panel('close')
-    Array.from(document.getElementsByClassName('content')).forEach(x => {
-        x.style.display = "none";
-    })
 }
 
 document.getElementById('addSpineBtn').onclick = async() => {
@@ -368,6 +380,13 @@ document.getElementById('addSpineBtn').onclick = async() => {
         btn.innerHTML = costdata.word ?? costdata.name.charAt(0)
     }
 
+    btn.onclick = () => {
+        Toggle_Option_Panel(spinemodel.Label, {
+            title : 'Spine',
+            content : 'spineInfo'
+        })
+        setup_Spine_Panel(spinemodel)
+    }
 
     let div = document.createElement("div");
     div.className = 'delMinBtn'
@@ -386,15 +405,9 @@ document.getElementById('addSpineBtn').onclick = async() => {
         Toggle_Option_Panel(spinemodel.Label, 'remove')
         appViewer.removeSpine(spinemodel.Label)
     }
-    btn.append(div)
-    iconlist.append(btn)
 
-    btn.onclick = () => {
-        title.innerHTML = 'Spine'
-        Toggle_Option_Panel(spinemodel.Label)
-        Btn_onClick('spine-info')
-        setup_Spine_Panel(spinemodel)
-    }
+    btn.append(div)    
+    iconlist.append(btn)
 
     Toggle_Option_Panel('close')
 }

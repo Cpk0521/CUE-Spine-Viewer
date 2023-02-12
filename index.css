@@ -93,19 +93,6 @@ img{
     position: relative;
 }
 
-/* .iconBtn::after{
-    position: absolute;
-    content: '';
-    width: 25px;
-    height: 25px;
-    line-height: 100px;
-    text-align: center;
-    background-color: #e45656;
-    border-radius: 50%;
-    top : -5px;
-    right: -5px;
-} */
-
 .wordBtn {
     background-color: #36393f;
     width: 60px;
@@ -412,5 +399,12 @@ img{
         opacity: 1;
         -webkit-transform: translateX(0);
         transform: translateX(0);
+    }
+}
+
+@media only screen and (max-width: 401px) {
+
+    #options {
+        width: -webkit-fill-available!important;
     }
 }
