@@ -64,8 +64,16 @@ class spineViewer{
         }
         
         this._spineMap.set(label, _spineModel)
-        let {height} = _spineModel.Model.getLocalBounds()
-        _spineModel.Model.position.set(this._width/2, this._height/2 + height/2);
+        let {width, height} = _spineModel.Model.getLocalBounds()
+        
+        let scale = 1
+        if(width > this._width || height>this._height){
+            let ratio = Math.min(width / this._width, height / this._height)
+            scale = ratio - 0.1
+        }
+
+        _spineModel.setScale(scale)
+        _spineModel.Model.position.set(this._width/2, this._height/2 + height*scale/2);
         this._mainContainer.addChild(_spineModel.Model)
     }
 
