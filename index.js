@@ -64,7 +64,8 @@ class spineViewer{
         }
         
         this._spineMap.set(label, _spineModel)
-        _spineModel.Model.position.set(this._width/2, this._height * 0.8);
+        let {height} = _spineModel.Model.getLocalBounds()
+        _spineModel.Model.position.set(this._width/2, this._height/2 + height/2);
         this._mainContainer.addChild(_spineModel.Model)
     }
 
@@ -77,6 +78,10 @@ class spineViewer{
         this._mainContainer.removeChild(_spineModel.Model)
         _spineModel.destroy()
         return this._spineMap.delete(label)
+    }
+
+    setBackgroundColor(color){
+        this._app.renderer.backgroundColor = color
     }
 
     isModelInList(label){
@@ -130,7 +135,6 @@ class SpineModel{
     playAnimation(anim_name){
         this._currAnimation = anim_name
         this._spine.state.setAnimation(0, anim_name, this._loopbool);
-        // console.log(this._spine.state)
     }
 
     setScale(scale){
@@ -457,4 +461,10 @@ document.getElementById('addSpineBtn').onclick = async() => {
     iconlist.append(btn)
 
     Toggle_Option_Panel('close')
+}
+
+
+document.getElementById('colorPicker').oninput = function(){
+    appViewer.setBackgroundColor(String(this.value).replace(/#/, '0x'))
+
 }

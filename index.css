@@ -229,6 +229,49 @@ img{
     border-radius: 100px;
 }
 
+.controllBtn-list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.controllBtn-list > button{
+    width: 35%;
+    border-radius: 5px;
+    background: #42464d;
+    border: 1px solid #42464d;    
+    color: #fff;
+    font-size: large;
+    font-family: RodinCattleya_Pro_DB;
+    text-align: center;
+    cursor: pointer;
+}
+
+.controllBtn-list > button:hover {
+    background: #3c3f45;
+    border: 1px solid #3c3f45;
+}
+
+#colorPicker {
+    background-color: #dcddde;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+#colorPicker::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+
+#colorPicker::-webkit-color-swatch {
+	border: none;
+    border-radius: 3px;
+}
+
+
 /* 選單 > Create */
 
 .form-select {
@@ -268,7 +311,7 @@ img{
 }
 
 .controll-list {
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     border-bottom: 1px solid #45474b;
     display: flex;
     flex-direction: column;
@@ -280,30 +323,6 @@ img{
     display: flex;
     flex-direction: column;
     gap: 2px;
-}
-
-.controllBtn-list{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding: 10px;
-}
-
-.controllBtn-list > button{
-    width: 35%;
-    border-radius: 5px;
-    background: #42464d;
-    border: 1px solid #42464d;    
-    color: #fff;
-    font-size: large;
-    font-family: RodinCattleya_Pro_DB;
-    text-align: center;
-    cursor: pointer;
-}
-
-.controllBtn-list > button:hover {
-    background: #3c3f45;
-    border: 1px solid #3c3f45;
 }
 
 /* 選單 > Spine */
