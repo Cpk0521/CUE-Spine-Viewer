@@ -330,10 +330,10 @@ img{
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
 }
 
-.info-options > label {
+.options-checkbox {
     cursor: pointer;
     width: 100%;
     display: flex;
@@ -341,11 +341,34 @@ img{
     justify-content: space-between;
 }
 
-.info-options > label > input[type='checkbox'] {
+.options-checkbox > input[type='checkbox'] {
     cursor: pointer;
     accent-color: #2f3136;
     width: 20px;
     height: 20px;
+}
+
+.options-input {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.options-input > input[type='number']{
+    width: 50px;
+    border-radius: 5px;
+    font-family: RodinCattleya_Pro_B;
+    text-align: center;
+    background-color: #2f3136;
+    outline-color: #2f3136;
+    color: #dcddde;
+    border: 0px;
+}
+
+.options-input > input[type=number]::-webkit-inner-spin-button {
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 .collapsible {
@@ -362,7 +385,7 @@ img{
     border-bottom: 1px solid #45474b;
 }
 
-.active, .collapsible:hover {
+.active, .collapsible {
     background-color: #42464d;
 }
 

@@ -101,12 +101,25 @@
                 <p class="CostumeName" id="info-CostumeName">Name</p>
               </div>
               <!-- 顯示 -->
+              <!-- <div class="info">
+                <div class="info-options">
+                  <p class="panel_Blod_Font" >Position</p>
+                </div>
+              </div> -->
               <div class="info">
                 <div class="info-options">
-                  <label for="anim_loop">
+                  <div class="options-input">
+                    <p class="panel_Blod_Font" >Scale</p>
+                    <input type="number" min="0.01" value="1" id="scale_Num">
+                  </div>
+                  <label class="options-checkbox" for="anim_loop">
                     <p class="panel_Blod_Font" >Loop</p>
                     <input type="checkbox" id="anim_loop">
                   </label>
+                  <div class="options-input">
+                    <p class="panel_Blod_Font" >Speed</p>
+                    <input type="number" min="0.1" value="1" id="speed_Num">
+                  </div>
                 </div>
               </div>
               <!-- <button class="collapsible">Display</button>

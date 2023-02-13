@@ -116,6 +116,8 @@ class SpineModel{
         this._character = character
         this._costume = costume
         this._loopbool = true
+        this._speed = 1
+        this._scale = 1
         this._pointerEventBind()
     }
 
@@ -128,7 +130,24 @@ class SpineModel{
     playAnimation(anim_name){
         this._currAnimation = anim_name
         this._spine.state.setAnimation(0, anim_name, this._loopbool);
-        console.log(this._spine.state)
+        // console.log(this._spine.state)
+    }
+
+    setScale(scale){
+        this._scale = scale
+        this._spine.scale.set(scale)
+    }
+
+    changeSpeed(speed){
+        this._speed = speed
+        this._spine.state.timeScale = speed
+    }
+
+    setLoop(bool){
+        this._loopbool = bool
+        if(this._spine.state.tracks.length > 0){
+            this._spine.state.setAnimation(0, this._currAnimation, this._loopbool);
+        }
     }
 
     _pointerEventBind(){
@@ -156,15 +175,16 @@ class SpineModel{
         ));
     }
 
-    setLoop(bool){
-        this._loopbool = bool
-        if(this._spine.state.tracks.length > 0){
-            this._spine.state.setAnimation(0, this._currAnimation, this._loopbool);
-        }
-    }
-
     get AnimLoop(){
         return this._loopbool
+    }
+
+    get Scale(){
+        return this._scale
+    }
+
+    get Speed(){
+        return this._speed
     }
 
     destroy(){
@@ -190,6 +210,7 @@ class SpineModel{
     get Animations(){
         return this._spine.spineData.animations
     }
+
     
 }
 
@@ -282,10 +303,14 @@ const setup_Spine_Panel = (_spineModel) => {
     let ModelName = document.getElementById('info-ModelName')
     let CostumeName = document.getElementById('info-CostumeName')
     let anim_loop = document.getElementById('anim_loop')
+    let anim_speed = document.getElementById('speed_Num')
+    let model_scale = document.getElementById('scale_Num')
 
     ModelName.innerHTML = _spineModel.Character
     CostumeName.innerHTML = _spineModel.Costume
     anim_loop.checked = _spineModel.AnimLoop
+    anim_speed.value = _spineModel.Speed
+    model_scale.value = _spineModel.Scale
 
     Array.from(document.getElementsByClassName('collapsible')).forEach(x => {
         x.classList.remove('active')
@@ -310,6 +335,18 @@ const setup_Spine_Panel = (_spineModel) => {
 
     anim_loop.onchange = function() {
         _spineModel.setLoop(this.checked)
+    }
+
+    anim_speed.oninput = function(){
+        if(this.value == '')
+            return
+        _spineModel.changeSpeed(this.value)
+    }
+
+    model_scale.oninput = function(){
+        if(this.value == '')
+            return
+        _spineModel.setScale(this.value)
     }
 
 }
