@@ -15,11 +15,20 @@ const Option_Panel = {
 class spineViewer{
 
     _copyW = false
+    // ©Liber Entertainment Inc.
+    _copyW_text = new PIXI.Text('© Liber Entertainment Inc.', new PIXI.TextStyle({
+            fontSize: 20,
+            fontWeight: "bold",
+            letterSpacing: 1,
+            lineHeight: 37,
+            fill: "#ffffff",
+        }));
     _spineMap = new Map()
-    constructor(element, {width, height, background, alpha}){
+    constructor(element, {width, height, background, alpha, copyW}){
         this._element = element
         this._width = width ?? window.innerWidth
         this._height = height ?? window.innerHeight;
+        this._copyW = copyW ?? true
 
         //create PIXI Application
         this._app = new PIXI.Application({
@@ -35,10 +44,6 @@ class spineViewer{
         
         //add To HTML element
         element?.appendChild(this._app.view);
-
-        //resize the PIXI Application and add event listener
-        this._resize();
-        window.addEventListener('resize', this._resize)
         
         //create main Container and add To Application
         this._mainContainer = new PIXI.Container()
@@ -49,8 +54,21 @@ class spineViewer{
         // this._ticker = PIXI.Ticker.shared;
         // this._ticker.autoStart = true
 
+        //copyW
+        if(this._copyW){
+            this._copyW_text.anchor.set(1)
+            this._copyW_text.position.set(this._width, this._height)
+            this._mainContainer.addChild(this._copyW_text)
+        }
+
+        //resize the PIXI Application and add event listener
+        this._resize();
+        window.addEventListener('resize', this._resize)
+
+        
         //Hello
         this._Hello()
+
     }
 
     static create(element, config = {}){
@@ -59,7 +77,7 @@ class spineViewer{
 
     addSpine(label, _spineModel){
 
-        if (this.isModelInList()){
+        if (this.isModelInList(label)){
             return
         }
         
@@ -101,6 +119,10 @@ class spineViewer{
         this._width =  this._element.clientWidth
         this._height =  this._element.clientHeight;
         this._app.renderer.resize(this._width, this._height);
+        
+        let scale_count =  Math.min(this._width / 275, 1)
+        this._copyW_text.scale.set(scale_count - 0.08)
+        this._copyW_text.position.set(this._width, this._height)
     }
 
     _Hello(){
@@ -364,6 +386,8 @@ const setup_Spine_Panel = (_spineModel) => {
 }
 
 //-----------------------------------------------------------
+var params = new URLSearchParams(window.location.search)
+var NocopyW = params.get('NocopyW')
 
 /**
  * create Spine Viewer
@@ -371,7 +395,8 @@ const setup_Spine_Panel = (_spineModel) => {
 const viewerdiv = document.getElementById('viewer')
 const appViewer = spineViewer.create(viewerdiv, {
     width: viewerdiv.clientWidth,
-    height : viewerdiv.clientHeight
+    height : viewerdiv.clientHeight,
+    copyW : NocopyW
 })
 
 /**
