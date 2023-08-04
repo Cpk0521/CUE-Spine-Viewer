@@ -40,6 +40,7 @@ class spineViewer{
             backgroundAlpha: alpha ?? 1,
             width: width ?? this._width,
             height: height ?? this._height,
+            premultipliedAlpha: true,
         })
         
         //add To HTML element
@@ -157,7 +158,7 @@ class SpineModel{
     }
 
     static async create(json, character, costume){
-       let resource = await loader.load(json)
+       let resource = await loader.load(json);
        let _spine = new PixiSpine.Spine(resource.spineData);
        return new this(_spine, character, costume)
     }
