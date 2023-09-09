@@ -3,6 +3,7 @@ root.png
 size: 128,128
 format: RGBA8888
 filter: MipMap,MipMap
+pma: true
 repeat: none
 ashi_mae
   rotate: false

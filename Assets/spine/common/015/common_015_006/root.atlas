@@ -3,6 +3,7 @@ root.png
 size: 1024,1024
 format: RGBA8888
 filter: Linear,Linear
+pma: true
 repeat: none
 01_back_parts_00
   rotate: false

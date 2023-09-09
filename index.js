@@ -43,6 +43,10 @@ class spineViewer{
             premultipliedAlpha: true,
         })
         
+        PIXI.Assets.setPreferences({
+            preferCreateImageBitmap: false
+        });
+        
         //add To HTML element
         element?.appendChild(this._app.view);
         
