@@ -253,6 +253,24 @@ img{
     border: 1px solid #3c3f45;
 }
 
+#snapshotBtn{
+    /* width: 35%; */
+    border-radius: 5px;
+    background: #42464d;
+    border: 1px solid #42464d;    
+    color: #fff;
+    font-size: large;
+    font-family: RodinCattleya_Pro_DB;
+    text-align: center;
+    cursor: pointer;
+}
+
+#snapshotBtn:hover {
+    background: #3c3f45;
+    border: 1px solid #3c3f45;
+}
+
+
 #colorPicker {
     background-color: #dcddde;
     width: 100%;

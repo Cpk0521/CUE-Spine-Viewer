@@ -42,7 +42,9 @@ class spineViewer{
             height: height ?? this._height,
             premultipliedAlpha: true,
         })
-        
+
+        // globalThis.__PIXI_APP__ = this._app;
+    
         PIXI.Assets.setPreferences({
             preferCreateImageBitmap: false
         });
@@ -63,7 +65,7 @@ class spineViewer{
         if(this._copyW){
             this._copyW_text.anchor.set(1)
             this._copyW_text.position.set(this._width, this._height)
-            this._mainContainer.addChild(this._copyW_text)
+            this._app.stage.addChild(this._copyW_text)
         }
 
         //resize the PIXI Application and add event listener
@@ -145,6 +147,14 @@ class spineViewer{
     destroy(){
         this._app.destroy(true, { children: true, texture: true, baseTexture: true });
         this._app = null
+    }
+
+    get container(){
+        return this._mainContainer;
+    }
+
+    get app(){
+        return this._app;
     }
 
 }
@@ -504,5 +514,13 @@ document.getElementById('addSpineBtn').onclick = async() => {
 
 document.getElementById('colorPicker').oninput = function(){
     appViewer.setBackgroundColor(String(this.value).replace(/#/, '0x'))
+}
 
+document.getElementById('snapshotBtn').onclick = async() => {
+    if(!appViewer.app || !appViewer.container) return
+    const iamge = await appViewer.app.renderer.extract.image(appViewer.container);
+    screenshot = document.createElement('a');
+    screenshot.download = 'image.png'
+    screenshot.href = iamge.src;
+    screenshot.click();
 }
