@@ -519,7 +519,7 @@ document.getElementById('colorPicker').oninput = function(){
 document.getElementById('snapshotBtn').onclick = async() => {
     if(!appViewer.app || !appViewer.container) return
     const iamge = await appViewer.app.renderer.extract.image(appViewer.container);
-    screenshot = document.createElement('a');
+    let screenshot = document.createElement('a');
     screenshot.download = 'image.png'
     screenshot.href = iamge.src;
     screenshot.click();
