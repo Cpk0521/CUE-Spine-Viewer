@@ -253,7 +253,7 @@ img{
     border: 1px solid #3c3f45;
 }
 
-#snapshotBtn{
+.snapshotBtn{
     /* width: 35%; */
     border-radius: 5px;
     background: #42464d;
@@ -265,7 +265,7 @@ img{
     cursor: pointer;
 }
 
-#snapshotBtn:hover {
+.snapshotBtn:hover {
     background: #3c3f45;
     border: 1px solid #3c3f45;
 }

@@ -55,6 +55,7 @@ class spineViewer{
         //create main Container and add To Application
         this._mainContainer = new PIXI.Container()
         this._mainContainer.interactive = true 
+        this._mainContainer.name = 'mainContainer'
         this._app.stage.addChild(this._mainContainer)
 
         //ticker
@@ -161,20 +162,21 @@ class spineViewer{
 
 class SpineModel{
 
-    constructor(spine, character, costume){
-        this._spine = spine
-        this._character = character
-        this._costume = costume
-        this._loopbool = true
-        this._speed = 1
-        this._scale = 1
-        this._pointerEventBind()
+    constructor(spineData, character, costume){
+        this._spine = new PixiSpine.Spine(spineData);
+        this._spinedata = spineData;
+        this._character = character;
+        this._costume = costume;
+        this._loopbool = true;
+        this._speed = 1;
+        this._scale = 1;
+        this._pointerEventBind();
     }
 
     static async create(json, character, costume){
        let resource = await loader.load(json);
-       let _spine = new PixiSpine.Spine(resource.spineData);
-       return new this(_spine, character, costume)
+       this.spineData = resource.spineData;
+       return new this(resource.spineData, character, costume)
     }
 
     playAnimation(anim_name){
@@ -258,6 +260,10 @@ class SpineModel{
 
     get Animations(){
         return this._spine.spineData.animations
+    }
+
+    get spineData(){
+        return this._spinedata
     }
 
     
@@ -516,11 +522,233 @@ document.getElementById('colorPicker').oninput = function(){
     appViewer.setBackgroundColor(String(this.value).replace(/#/, '0x'))
 }
 
-document.getElementById('snapshotBtn').onclick = async() => {
+document.getElementById('snapshotImgBtn').onclick = async() => {
     if(!appViewer.app || !appViewer.container) return
     const iamge = await appViewer.app.renderer.extract.image(appViewer.container);
     let screenshot = document.createElement('a');
     screenshot.download = 'image.png'
     screenshot.href = iamge.src;
     screenshot.click();
+    screenshot.remove();
 }
+
+document.getElementById('snapshotAnimBtn').onclick = async() => {
+    if(!appViewer.app || !appViewer.container) return;
+
+    exportToMP4();
+
+}
+
+function exportToMP4(){
+    let canvasWidth = appViewer.app.view.width % 2 === 0 ? appViewer.app.view.width : appViewer.app.view.width + 1; //Math.ceil(width + 200);
+    let canvasHeight = appViewer.app.view.height % 2 === 0 ? appViewer.app.view.height : appViewer.app.view.height + 1; //Math.ceil(height + 200);
+    
+    const sprite = new PIXI.Sprite(PIXI.Texture.EMPTY);
+    sprite.width = canvasWidth;
+    sprite.height = canvasHeight;
+    appViewer.app.stage.addChild(sprite);    
+
+    let muxer = new Mp4Muxer.Muxer({
+        target: new Mp4Muxer.ArrayBufferTarget(),
+        video: {
+            codec: 'avc',
+            width: canvasWidth,
+            height: canvasHeight,
+            frameRate: 30
+        },
+        fastStart : false,
+        firstTimestampBehavior: 'offset',
+    });
+
+    let videoEncoder = new window.VideoEncoder({
+        output: (chunk, meta) => muxer.addVideoChunk(chunk, meta),
+        error: e => console.error(e)
+    });
+    videoEncoder.configure({
+        codec: 'avc1.42001f',
+        width: canvasWidth,
+        height: canvasHeight,
+        bitrate: 800 * 10000,
+    });
+
+    let totalTime = 0;    
+    let spines = [];
+
+    appViewer._spineMap.forEach((spineModel, _)=>{
+        spines.push(spineModel);
+        spineModel._currAnimation && spineModel._spine.state.setAnimation(0, spineModel._currAnimation, 0);
+        totalTime = Math.max(totalTime, spineModel._spine.state.tracks[0].animation.duration)
+    })
+
+    const endEncoding = async () => {
+        await videoEncoder.flush();
+        videoEncoder.close();
+
+        muxer.finalize();
+
+        let buffer = muxer.target?.buffer;
+
+        const blobUrl = URL.createObjectURL(new Blob([buffer], { type: "video/mp4" }));
+        let screenshot = document.createElement('a');
+        screenshot.download = 'animation.mp4'
+        screenshot.href = blobUrl;
+        screenshot.click();
+        screenshot.remove();
+
+        videoEncoder = null;
+        muxer = null;
+        appViewer.app.stage.removeChild(sprite);
+        spines.map((spineModel)=> spineModel._spine.state.setAnimation(0, spineModel._currAnimation, true));
+    }
+
+    const record = async (timestamp) => {
+        const frame = new VideoFrame(appViewer.app.renderer.extract.canvas(appViewer.app.stage), {
+            timestamp: (timestamp * 1000 / 60) * 1000,
+        });
+        videoEncoder.encode(frame, {
+            keyFrame: timestamp % 60 === 0,
+        });
+        frame.close();
+    }
+
+    for (let i = 0; i < Math.ceil(totalTime * 60); i++) {
+        record(i);
+    }
+
+    console.log('done!');
+    endEncoding();
+
+
+}
+
+// function recordToMp4_test(){
+//     // const canvas = appViewer.app.view; //顏色出現問題
+//     const canvas = appViewer.app.renderer.extract.canvas(appViewer.container); //圖像不更新
+
+//     if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+
+//         const mediaRecorder = new MediaRecorder(canvas.captureStream(30),{
+//             mimeType: "video/mp4",
+//         });
+//         let recordedChunks = [];
+
+//         mediaRecorder.ondataavailable = (event) => {
+//             recordedChunks.push(event.data);
+//         };
+
+//         mediaRecorder.onstop = () => {
+//             // 完成錄製後,獲取 MP4 資料
+//             const blob = new Blob(recordedChunks, { type: 'video/mp4' });
+
+//             // 將 MP4 Blob 保存或上傳
+//             // ...
+//             recordedChunks = [];
+//             let screenshot = document.createElement('a');
+//             screenshot.download = 'image.mp4';
+//             screenshot.href = URL.createObjectURL(blob);
+//             screenshot.click();
+//         };
+
+//         mediaRecorder.start();
+
+//         let totalTime = 0;
+
+//         appViewer._spineMap.forEach((spineModel, _) => {
+//             spineModel._currAnimation && spineModel._spine.state.setAnimation(0, spineModel._currAnimation, true);
+//             totalTime = Math.max(totalTime, spineModel._spine.state.tracks[0].animation.duration)
+//         })
+
+//         setTimeout(() => {
+//             mediaRecorder.stop();
+//             console.log('done!');
+//         }, totalTime * 1000);
+//     }
+//     else{
+//         console.error('MediaRecorder API 不可用');
+//     }
+// }
+
+
+// function exportToAPNG(){
+//     let canvas = document.createElement('canvas');
+//     canvas.id = 'exportCanvas';
+//     canvas.style.display = "none";
+//     document.body.appendChild(canvas);
+
+//     let canvasWidth = 250;
+//     let canvasHeight = 250;
+
+//     let outApp = new PIXI.Application({
+//         view: canvas,
+//         backgroundColor : 0x000000,
+//         backgroundAlpha: 1,
+//         autoStart: true,
+//         antialias: true,
+//         width: canvasWidth,
+//         height: canvasHeight,
+//     })
+
+//     const sprite = new PIXI.Sprite(PIXI.Texture.EMPTY);
+//     sprite.width = canvasWidth;
+//     sprite.height = canvasHeight;
+//     outApp.stage.addChild(sprite);
+
+//     let totalTime = 0;
+//     let currTime = 0;
+
+//     let spines = new Map()
+//     appViewer._spineMap.forEach((spineModel, key) => {
+//         let _spine = new PixiSpine.Spine(spineModel.spineData);
+//         spines.set(key, _spine)
+
+//         let scale = 1
+//         let {width, height} = _spine.getLocalBounds();
+//         console.log(width, height)
+//         if(width > canvasWidth || height > canvasHeight){
+//             let ratio = Math.min(canvasWidth / width, canvasHeight / height, 1);
+//             scale = ratio - 0.01
+//         }
+        
+//         _spine.scale.set(scale);
+//         _spine.position.set(canvasWidth/2, canvasHeight/2 + height * scale/2); 
+//         outApp.stage.addChild(_spine);
+        
+//         spineModel._currAnimation && _spine.state.setAnimation(0, spineModel._currAnimation, 0);
+//         totalTime = Math.max(totalTime, _spine.state.tracks[0].animation.duration)
+//     })
+
+//     let pngData = []
+//     let timedata = []
+//     const capturer = () => {
+//         spines.forEach((_spine, _) => {
+//             currTime = Math.max(currTime, _spine.state.tracks[0].animationLast);
+//         })
+
+//         let data = outApp.renderer.extract.pixels(outApp.stage, {
+//             x : 0,
+//             y : 0,
+//             width : canvasWidth,
+//             height : canvasHeight
+//         });
+        
+//         pngData.push(data.buffer);
+//         timedata.push(1000/60);
+
+//         if(currTime >= totalTime){
+//             console.log('done!');
+//             canvas.remove();
+//             outApp.ticker.remove(capturer);
+
+//             const apngblob = UPNG.encode(pngData, canvasWidth, canvasHeight, 15, timedata);
+//             let screenshot = document.createElement('a');
+//             screenshot.download = 'animation.png'
+//             screenshot.href = URL.createObjectURL(new Blob([apngblob]));;
+//             screenshot.click();
+//             screenshot.remove();
+//             return;
+//         }
+//     }
+
+//     outApp.ticker.add(capturer);
+    
+// }
