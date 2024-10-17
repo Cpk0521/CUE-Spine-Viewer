@@ -595,7 +595,7 @@ function exportToMP4_VideoFrame(){
 
         const blobUrl = URL.createObjectURL(new Blob([buffer], { type: "video/mp4" }));
         let screenshot = document.createElement('a');
-        screenshot.download = 'animation.mp4'
+        screenshot.download = 'video.mp4'
         screenshot.href = blobUrl;
         screenshot.click();
         screenshot.remove();
@@ -635,7 +635,7 @@ function recordToMp4_MediaRecorder(){
         wantMineType = MediaRecorder.isTypeSupported('video/mp4') ? 'video/mp4' : 'video/webm';
 
         const mediaRecorder = new MediaRecorder(
-            canvasView.captureStream(60),
+            canvasView.captureStream(30), //fps 30
             {
                 mimeType: wantMineType,
             }
@@ -654,7 +654,7 @@ function recordToMp4_MediaRecorder(){
             // ...
             recordedChunks = [];
             let screenshot = document.createElement('a');
-            screenshot.download = 'image.mp4';
+            screenshot.download = `vedio.${MediaRecorder.isTypeSupported('video/mp4') ? 'mp4': 'webm'}`;
             screenshot.href = URL.createObjectURL(blob);
             screenshot.click();
         };
