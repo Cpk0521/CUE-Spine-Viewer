@@ -632,7 +632,7 @@ function recordToMp4_MediaRecorder(){
 
     if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
 
-        wantMineType = MediaRecorder.isTypeSupported('video/mp4') ? 'video/mp4' : 'video/webm';
+        wantMineType = MediaRecorder.isTypeSupported('video/mp4') ? 'video/mp4; codecs="avc1.424028, mp4a.40.2"' : 'video/webm';
 
         const mediaRecorder = new MediaRecorder(
             canvasView.captureStream(30), //fps 30
